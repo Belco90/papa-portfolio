@@ -6,7 +6,7 @@ export default function TopNav({ title, onMenuClick = () => {} }) {
       <a
         href="/#"
         className="toggle"
-        onClick={e => {
+        onClick={(e) => {
           e.preventDefault();
           onMenuClick();
         }}
