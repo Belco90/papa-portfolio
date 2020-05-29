@@ -1,7 +1,6 @@
 const config = require('./config');
 
 module.exports = {
-  pathPrefix: config.pathPrefix,
   siteMetadata: {
     title: config.siteTitle,
   },
@@ -12,7 +11,7 @@ module.exports = {
       options: {
         name: config.manifestName,
         short_name: config.manifestShortName,
-        start_url: config.pathPrefix || config.manifestStartUrl,
+        start_url: config.manifestStartUrl,
         background_color: config.manifestBackgroundColor,
         theme_color: config.manifestThemeColor,
         display: config.manifestDisplay,

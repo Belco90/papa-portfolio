@@ -7,7 +7,6 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-readonly/`, // This path is subpath of your hosting https://domain/portfolio
   authorName: 'Anubhav Srivastava',
   heading: "I got reprogrammed by a rogue AI and now I'm totally cray",
   // social
