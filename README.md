@@ -1,5 +1,9 @@
 # Papa's portfolio
-Portfolio for my papa, check it out! TODO URL
+
+Portfolio for my papa, [check it out!][url]
 
 # Portfolio para papá
-Portfolio para mi padre, ¡échale un vistazo! TODO URL
+
+Portfolio para mi padre, [¡échale un vistazo!][url]
+
+[url]: https://cristobal.netlify.app/
