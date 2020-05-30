@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
@@ -12,18 +11,17 @@ import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 
 const sections = [
-  { id: 'one', name: 'About' },
-  { id: 'two', name: 'Things I Can Do' },
-  { id: 'three', name: 'A Few Accomplishments' },
-  { id: 'four', name: 'Contact' },
-  { id: 'five', name: 'Elements' },
+  { id: 'about', name: 'Sobre mí' },
+  { id: 'things-i-can-do', name: 'Qué puedo hacer' },
+  { id: 'accomplishments', name: 'Mis logros' },
+  { id: 'contact', name: 'Contacto' },
 ];
 const IndexPage = () => (
   <Layout>
     <SideBar sections={sections} />
     <div id="wrapper">
       <div id="main">
-        <section id="one">
+        <section id="about">
           <div className="image main" data-position="center">
             <img src={banner} alt="" />
           </div>
@@ -47,7 +45,7 @@ const IndexPage = () => (
           </div>
         </section>
 
-        <section id="two">
+        <section id="things-i-can-do">
           <div className="container">
             <h3>Things I Can Do</h3>
             <p>
@@ -66,7 +64,7 @@ const IndexPage = () => (
           </div>
         </section>
 
-        <section id="three">
+        <section id="accomplishments">
           <div className="container">
             <h3>A Few Accomplishments</h3>
             <p>
@@ -115,7 +113,7 @@ const IndexPage = () => (
           </div>
         </section>
 
-        <section id="four">
+        <section id="contact">
           <div className="container">
             <h3>Contact Me</h3>
             <p>

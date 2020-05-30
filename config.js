@@ -1,35 +1,19 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Readonly', // <title>
-  manifestName: 'Readonly',
-  manifestShortName: 'Landing', // max 12 characters
+  siteTitle: 'Cristóbal Beltrán', // <title>
+  manifestName: 'Cristóbal',
+  manifestShortName: 'Cristóbal', // max 12 characters
   manifestStartUrl: '/',
-  manifestBackgroundColor: '#663399',
-  manifestThemeColor: '#663399',
+  manifestBackgroundColor: '#fff',
+  manifestThemeColor: '#ff5e6c',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
-  authorName: 'Anubhav Srivastava',
-  heading: "I got reprogrammed by a rogue AI and now I'm totally cray",
-  // social
+  manifestIcon: 'src/assets/images/icon.png',
+  authorName: 'Cristóbal Beltrán',
+  heading: 'El mejor animador del mundo y parte del extranjero',
   socialLinks: [
-    {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
-    },
-    {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      icon: 'fa-facebook',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
-    },
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
+      url: 'mailto:cbs.m61@gmail.com',
     },
   ],
 };

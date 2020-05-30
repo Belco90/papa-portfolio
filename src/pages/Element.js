@@ -8,7 +8,7 @@ import banner from '../assets/images/banner.jpg';
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
-import avatar from '../assets/images/avatar.png';
+import avatar from '../assets/images/avatar.jpeg';
 
 const sections = [
   { id: 'one', name: 'Text' },
