@@ -27,32 +27,27 @@ const IndexPage = () => (
           </div>
           <div className="container">
             <header className="major">
-              <h2>Read Only</h2>
-              <p>
-                Just an incredibly simple responsive site
-                <br />
-                template freebie by <a href="http://html5up.net">HTML5 UP</a>.
-              </p>
+              <h2>Cristóbal</h2>
+              <p>(descripción)</p>
             </header>
             <p>
-              Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus
-              col. Commodo id in arcu ante lorem ipsum sed accumsan erat
-              praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo.
-              Vis aliquet tortor ultricies non ante erat nunc integer eu ante
-              ornare amet commetus vestibulum blandit integer in curae ac
-              faucibus integer non. Adipiscing cubilia elementum.
+              Lorem fistrum ese que llega hasta luego Lucas no te digo trigo por
+              no llamarte Rodrigor se calle ustée no puedor amatomaa mamaar
+              pecador tiene musho peligro. Ahorarr no te digo trigo por no
+              llamarte Rodrigor te va a hasé pupitaa quietooor torpedo. No
+              puedor a wan diodenoo sexuarl ahorarr. Te voy a borrar el cerito
+              se calle ustée te voy a borrar el cerito papaar papaar llevame al
+              sircoo papaar papaar. Ahorarr mamaar papaar papaar a gramenawer
+              qué dise usteer no te digo trigo por no llamarte Rodrigor. Por la
+              gloria de mi madre condemor a peich no te digo trigo por no
+              llamarte Rodrigor me cago en tus muelas.
             </p>
           </div>
         </section>
 
         <section id="things-i-can-do">
           <div className="container">
-            <h3>Things I Can Do</h3>
-            <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer lorem ipsum dolor sit amet.
-            </p>
+            <h3>Qué puedo hacer</h3>
             <ul className="feature-icons">
               <li className="fa-code">Write all the code</li>
               <li className="fa-cubes">Stack small boxes</li>
@@ -66,11 +61,9 @@ const IndexPage = () => (
 
         <section id="accomplishments">
           <div className="container">
-            <h3>A Few Accomplishments</h3>
+            <h3>Mis logros</h3>
             <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer. Integer eu ante ornare amet commetus.
+              <em>pequeña descripción</em>
             </p>
             <div className="features">
               <article>
@@ -115,52 +108,41 @@ const IndexPage = () => (
 
         <section id="contact">
           <div className="container">
-            <h3>Contact Me</h3>
+            <h3>Contacto</h3>
             <p>
-              Integer eu ante ornare amet commetus vestibulum blandit integer in
-              curae ac faucibus integer non. Adipiscing cubilia elementum
-              integer. Integer eu ante ornare amet commetus.
+              Contactarme solo te llevará un par de minutos rellenando el
+              siguiente formulario:
             </p>
             <form method="post" action="#">
               <div className="row gtr-uniform">
                 <div className="col-6 col-12-xsmall">
-                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <label htmlFor="name">Nombre</label>
+                  <input type="text" name="name" id="name" />
                 </div>
                 <div className="col-6 col-12-xsmall">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                  />
+                  <label htmlFor="email">Correo eletrónico</label>
+                  <input type="email" name="email" id="email" />
                 </div>
                 <div className="col-12">
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                  />
+                  <label htmlFor="subject">Asunto</label>
+                  <input type="text" name="subject" id="subject" />
                 </div>
                 <div className="col-12">
+                  <label htmlFor="message">Mensaje</label>
                   <textarea
                     name="message"
                     id="message"
-                    placeholder="Message"
+                    placeholder="¡Déjame aquí tu mensaje!"
                     rows="6"
                   />
                 </div>
                 <div className="col-12">
                   <ul className="actions">
                     <li>
-                      <input
-                        type="submit"
-                        className="primary"
-                        value="Send Message"
-                      />
+                      <input type="submit" className="primary" value="Enviar" />
                     </li>
                     <li>
-                      <input type="reset" value="Reset Form" />
+                      <input type="reset" value="Borrar formulario" />
                     </li>
                   </ul>
                 </div>
