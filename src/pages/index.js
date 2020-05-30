@@ -113,15 +113,8 @@ const IndexPage = () => (
               Contactarme solo te llevará un par de minutos rellenando el
               siguiente formulario:
             </p>
-            <form
-              method="post"
-              action="#"
-              name="contact"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
+            <form method="post" action="#" name="contact" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="bot-field" />
 
               <div className="row gtr-uniform">
                 <div className="col-6 col-12-xsmall">
