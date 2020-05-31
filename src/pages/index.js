@@ -14,7 +14,7 @@ import pic3 from '../assets/images/pic03.jpg';
 const sections = [
   { id: 'about', name: 'Sobre mí' },
   { id: 'things-i-can-do', name: 'Qué puedo hacer' },
-  { id: 'accomplishments', name: 'Destacados' },
+  { id: 'moments', name: 'Momentos' },
   { id: 'contact', name: 'Contacto' },
 ];
 const IndexPage = () => (
@@ -31,16 +31,17 @@ const IndexPage = () => (
               <div className="image left profile-picture">
                 <img src={avatar} alt="Foto de Cristóbal Beltrán" />
               </div>
-              Lorem fistrum ese que llega hasta luego Lucas no te digo trigo por
-              no llamarte Rodrigor se calle ustée no puedor amatomaa mamaar
-              pecador tiene musho peligro. Ahorarr no te digo trigo por no
-              llamarte Rodrigor te va a hasé pupitaa quietooor torpedo. No
-              puedor a wan diodenoo sexuarl ahorarr. Te voy a borrar el cerito
-              se calle ustée te voy a borrar el cerito papaar papaar llevame al
-              sircoo papaar papaar. Ahorarr mamaar papaar papaar a gramenawer
-              qué dise usteer no te digo trigo por no llamarte Rodrigor. Por la
-              gloria de mi madre condemor a peich no te digo trigo por no
-              llamarte Rodrigor me cago en tus muelas.
+              Mi larga trayectoria como animador turístico me ha permitido
+              adquirir muchos conocimientos del sector hostelero en general y de
+              las relaciones públicas en particular.
+            </p>
+
+            <p>
+              Tengo mucha experiencia a la hora de confeccionar programas de
+              actividades deportivas, lúdicas o culturales, animación infantil,
+              tercera edad, presentación y organización de todo tipo de
+              espectáculos, así como amplios conocimientos y ejecución de todo
+              tipo de música de baile.
             </p>
           </div>
         </section>
@@ -59,9 +60,9 @@ const IndexPage = () => (
           </div>
         </section>
 
-        <section id="accomplishments">
+        <section id="moments">
           <div className="container">
-            <h3>Destacados</h3>
+            <h3>Momentos</h3>
             <p>
               <em>pequeña descripción</em>
             </p>

@@ -1579,6 +1579,13 @@ input[type='button'],
     }
   }
 
+  /* Main */
+  #main {
+    & .profile-picture {
+      display: block;
+    }
+  }
+
   /* Header */
 
   #header {
@@ -1841,10 +1848,6 @@ input[type='button'],
   /* Main */
 
   #main {
-    & .profile-picture {
-      display: block;
-    }
-
     > section {
       > .container {
         padding: 2em 0 0 0;
