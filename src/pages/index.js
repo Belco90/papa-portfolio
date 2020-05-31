@@ -7,9 +7,9 @@ import SideBar from '../components/SideBar';
 import banner from '../assets/images/banner.jpeg';
 import avatar from '../assets/images/avatar.jpeg';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+import pic1 from '../assets/images/picture-class.jpeg';
+import pic2 from '../assets/images/picture-chef.jpeg';
+import pic3 from '../assets/images/picture-painting.jpeg';
 
 const sections = [
   { id: 'about', name: 'Sobre mí' },
@@ -90,42 +90,47 @@ const IndexPage = () => (
           <div className="container">
             <h3>Momentos</h3>
             <p>
-              <em>pequeña descripción</em>
+              Algunos de mis momentos favoritos a lo largo de mi trayectoria:
             </p>
             <div className="features">
               <article>
-                <a href="/#" className="image">
-                  <img src={pic1} alt="" />
-                </a>
+                <div className="image">
+                  <img
+                    src={pic1}
+                    alt="Cristóbal de joven en el taller de decoración"
+                  />
+                </div>
                 <div className="inner">
-                  <h4>Possibly broke spacetime</h4>
                   <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
+                    En el taller, dónde aprendí diferentes técnicas de pintura y
+                    decoración.
                   </p>
                 </div>
               </article>
               <article>
-                <a href="/#" className="image">
-                  <img src={pic2} alt="" />
-                </a>
+                <div className="image">
+                  <img
+                    src={pic2}
+                    alt="Cristóbal junto al jefe de cocina, con los maîtres a ambos lados"
+                  />
+                </div>
                 <div className="inner">
-                  <h4>Terraformed a small moon</h4>
                   <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
+                    Con el jefe de cocina y maîtres en hotel El Puerto Sol
+                    (Fuengirola, Málaga)
                   </p>
                 </div>
               </article>
               <article>
-                <a href="/#" className="image">
-                  <img src={pic3} alt="" />
-                </a>
+                <div className="image">
+                  <img
+                    src={pic3}
+                    alt="Cristóbal y Rocío mostrando el cuadro: un arbol con flores rojas sobre tonos verdes y azules"
+                  />
+                </div>
                 <div className="inner">
-                  <h4>Snapped dark matter in the wild</h4>
                   <p>
-                    Integer eu ante ornare amet commetus vestibulum blandit
-                    integer in curae ac faucibus integer adipiscing ornare amet.
+                    Colgando uno de los cuadros que pinté para mi amiga Rocío.
                   </p>
                 </div>
               </article>
