@@ -13,7 +13,7 @@ import pic3 from '../assets/images/pic03.jpg';
 
 const sections = [
   { id: 'about', name: 'Sobre mí' },
-  { id: 'things-i-can-do', name: 'Qué puedo hacer' },
+  { id: 'skills', name: 'Habilidades' },
   { id: 'moments', name: 'Momentos' },
   { id: 'contact', name: 'Contacto' },
 ];
@@ -31,10 +31,14 @@ const IndexPage = () => (
               <div className="image left profile-picture">
                 <img src={avatar} alt="Foto de Cristóbal Beltrán" />
               </div>
-              Soy Cristóbal y quiero hablarte un poco sobre mi trayectoria. Mi
-              largo recorrido como animador turístico me ha permitido adquirir
-              muchos conocimientos del sector hostelero en general y de las
-              relaciones públicas en particular.
+              Hola, navegante. Soy Cristóbal y quiero hablarte un poco sobre mí
+              y mi trayectoria.
+            </p>
+
+            <p>
+              Mi largo recorrido como animador turístico me ha permitido
+              adquirir muchos conocimientos del sector hostelero en general y de
+              las relaciones públicas en particular.
             </p>
 
             <p>
@@ -68,9 +72,9 @@ const IndexPage = () => (
           </div>
         </section>
 
-        <section id="things-i-can-do">
+        <section id="skills">
           <div className="container">
-            <h3>Qué puedo hacer</h3>
+            <h3>Habilidades</h3>
             <ul className="feature-icons">
               <li className="fa-code">Write all the code</li>
               <li className="fa-cubes">Stack small boxes</li>
