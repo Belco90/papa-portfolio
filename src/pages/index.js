@@ -76,12 +76,12 @@ const IndexPage = () => (
           <div className="container">
             <h3>Habilidades</h3>
             <ul className="feature-icons">
-              <li className="fa-code">Write all the code</li>
-              <li className="fa-cubes">Stack small boxes</li>
-              <li className="fa-book">Read books and stuff</li>
-              <li className="fa-coffee">Drink much coffee</li>
-              <li className="fa-bolt">Lightning bolt</li>
-              <li className="fa-users">Shadow clone technique</li>
+              <li className="fa-star">Animación</li>
+              <li className="fa-hotel">Hostelería</li>
+              <li className="fa-birthday-cake">Organización de actividades</li>
+              <li className="fa-music">Música de baile</li>
+              <li className="fa-comment">Don de gentes</li>
+              <li className="fa-paint-brush">Pintura</li>
             </ul>
           </div>
         </section>
