@@ -13,7 +13,7 @@ import pic3 from '../assets/images/pic03.jpg';
 const sections = [
   { id: 'about', name: 'Sobre mí' },
   { id: 'things-i-can-do', name: 'Qué puedo hacer' },
-  { id: 'accomplishments', name: 'Mis logros' },
+  { id: 'accomplishments', name: 'Destacados' },
   { id: 'contact', name: 'Contacto' },
 ];
 const IndexPage = () => (
@@ -28,7 +28,6 @@ const IndexPage = () => (
           <div className="container">
             <header className="major">
               <h2>Cristóbal</h2>
-              <p>(descripción)</p>
             </header>
             <p>
               Lorem fistrum ese que llega hasta luego Lucas no te digo trigo por
@@ -61,7 +60,7 @@ const IndexPage = () => (
 
         <section id="accomplishments">
           <div className="container">
-            <h3>Mis logros</h3>
+            <h3>Destacados</h3>
             <p>
               <em>pequeña descripción</em>
             </p>

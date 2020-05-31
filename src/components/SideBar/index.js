@@ -7,20 +7,20 @@ import config from '../../../config';
 const pic = require('../../assets/images/avatar.jpeg');
 
 export default function SideBar({ sections = [] }) {
-  const [headerOpen, toggleHeader] = useState(false);
+  const [isHeaderOpen, setIsHeaderOpen] = useState(false);
+
+  const toggleHeader = () => setIsHeaderOpen(!isHeaderOpen);
+
   return (
-    <div className={`${headerOpen ? 'header-visible' : ' '}`}>
-      <TopNav
-        title={config.authorName}
-        onMenuClick={() => toggleHeader(!headerOpen)}
-      />
+    <div className={`${isHeaderOpen ? 'header-visible' : ' '}`}>
+      <TopNav title={config.authorName} onMenuClick={toggleHeader} />
       <section id="header">
         <Header
           avatar={pic}
           title={config.authorName}
           heading={config.heading}
         />
-        <Nav sections={sections} />
+        <Nav sections={sections} onSectionClick={toggleHeader} />
         <Footer socialLinks={config.socialLinks} />
       </section>
     </div>
