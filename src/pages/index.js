@@ -117,25 +117,33 @@ const IndexPage = () => (
 
               <div className="row gtr-uniform">
                 <div className="col-6 col-12-xsmall">
-                  <label htmlFor="name">Nombre</label>
-                  <input type="text" name="name" id="name" />
+                  <label>
+                    Nombre
+                    <input type="text" name="name" id="name" />
+                  </label>
                 </div>
                 <div className="col-6 col-12-xsmall">
-                  <label htmlFor="email">Correo eletrónico</label>
-                  <input type="email" name="email" id="email" />
+                  <label>
+                    Correo eletrónico
+                    <input type="email" name="email" id="email" />
+                  </label>
                 </div>
                 <div className="col-12">
-                  <label htmlFor="subject">Asunto</label>
-                  <input type="text" name="subject" id="subject" />
+                  <label>
+                    Asunto
+                    <input type="text" name="subject" id="subject" />
+                  </label>
                 </div>
                 <div className="col-12">
-                  <label htmlFor="message">Mensaje</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="¡Déjame aquí tu mensaje!"
-                    rows="6"
-                  />
+                  <label>
+                    Mensaje
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="¡Déjame aquí tu mensaje!"
+                      rows="6"
+                    />
+                  </label>
                 </div>
                 <div className="col-12">
                   <ul className="actions">

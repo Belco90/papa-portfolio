@@ -13,7 +13,12 @@ export default function Nav({ sections = [], onSectionClick }) {
         >
           {sections.map((s) => {
             return (
-              <li key={s.id} onClick={onSectionClick}>
+              <li
+                key={s.id}
+                onClick={onSectionClick}
+                onKeyDown={onSectionClick}
+                role="presentation"
+              >
                 <Scroll type="id" element={s.id}>
                   <a href={`#${s.id}`}>{s.name}</a>
                 </Scroll>
