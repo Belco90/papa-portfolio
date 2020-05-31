@@ -31,9 +31,10 @@ const IndexPage = () => (
               <div className="image left profile-picture">
                 <img src={avatar} alt="Foto de Cristóbal Beltrán" />
               </div>
-              Mi larga trayectoria como animador turístico me ha permitido
-              adquirir muchos conocimientos del sector hostelero en general y de
-              las relaciones públicas en particular.
+              Soy Cristóbal y quiero hablarte un poco sobre mi trayectoria. Mi
+              largo recorrido como animador turístico me ha permitido adquirir
+              muchos conocimientos del sector hostelero en general y de las
+              relaciones públicas en particular.
             </p>
 
             <p>
@@ -42,6 +43,27 @@ const IndexPage = () => (
               tercera edad, presentación y organización de todo tipo de
               espectáculos, así como amplios conocimientos y ejecución de todo
               tipo de música de baile.
+            </p>
+
+            <p>
+              Al mismo tiempo he desarrollado el trabajo de
+              facturación/restaurante, que me ha permitido ampliar mis
+              conocimientos sobre este departamento e igualmente sobre otros,
+              como por ejemplo recepcionista.
+            </p>
+
+            <p>
+              Tengo grandes dotes para el dibujo y la pintura, actividades que
+              considero mi hobby, e indudablemente un suplemento para mi
+              trabajo. Además tengo buenas ideas para cualquier tipo de
+              decoración.
+            </p>
+
+            <p>
+              Aparte de estos conocimientos, me gustaría resaltar la base
+              principal de mi trabajo: las relaciones públicas, el llamado “don
+              de gentes”. La relación diaria con los clientes es algo que me
+              sigue entusiasmando.
             </p>
           </div>
         </section>
