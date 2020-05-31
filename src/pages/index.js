@@ -5,6 +5,7 @@ import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
 
 import banner from '../assets/images/banner.jpg';
+import avatar from '../assets/images/avatar.jpeg';
 
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
@@ -23,13 +24,13 @@ const IndexPage = () => (
       <div id="main">
         <section id="about">
           <div className="image main" data-position="center">
-            <img src={banner} alt="" />
+            <img src={banner} alt="Playa de Fuengirola al amanecer" />
           </div>
           <div className="container">
-            <header className="major">
-              <h2>Cristóbal</h2>
-            </header>
             <p>
+              <div className="image left profile-picture">
+                <img src={avatar} alt="Foto de Cristóbal Beltrán" />
+              </div>
               Lorem fistrum ese que llega hasta luego Lucas no te digo trigo por
               no llamarte Rodrigor se calle ustée no puedor amatomaa mamaar
               pecador tiene musho peligro. Ahorarr no te digo trigo por no

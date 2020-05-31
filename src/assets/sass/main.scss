@@ -580,6 +580,7 @@ select {
 
 textarea {
   padding: 0.75em 1em;
+  resize: none;
 }
 
 input[type='checkbox'],
@@ -1404,6 +1405,10 @@ input[type='button'],
 /* Main */
 
 #main {
+  & .profile-picture {
+    display: none;
+  }
+
   > section {
     border-top: solid (_size(border-width) * 3) _palette(border);
 
@@ -1424,12 +1429,13 @@ input[type='button'],
   border-top: 0;
   color: #c0c0c0;
   overflow: hidden;
-  padding: 4em 0 2em 0;
+  padding: 2em 0 2em;
 
   .copyright {
     line-height: 1em;
     list-style: none;
     padding: 0;
+    margin: 0;
 
     li {
       border-left: solid 1px #d4d4d4;
@@ -1595,12 +1601,10 @@ input[type='button'],
     }
 
     > footer {
-      bottom: auto;
+      bottom: 0;
       left: auto;
       margin: 0.5em 0 0 0;
-      position: relative;
-      right: auto;
-      top: auto;
+      position: absolute;
     }
   }
 
@@ -1811,8 +1815,13 @@ input[type='button'],
       padding: 2em;
 
       .avatar {
+        display: none;
         margin: 0 auto (_size(element-margin) * 0.75) auto;
         width: 6em;
+      }
+
+      #logo {
+        display: none;
       }
 
       h1 {
@@ -1832,6 +1841,10 @@ input[type='button'],
   /* Main */
 
   #main {
+    & .profile-picture {
+      display: block;
+    }
+
     > section {
       > .container {
         padding: 2em 0 0 0;
