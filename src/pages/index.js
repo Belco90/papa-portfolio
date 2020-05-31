@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
 
-import banner from '../assets/images/banner.jpg';
+import banner from '../assets/images/banner.jpeg';
 import avatar from '../assets/images/avatar.jpeg';
 
 import pic1 from '../assets/images/pic01.jpg';
