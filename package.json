@@ -11,12 +11,12 @@
     "email": "Belco90@gmail.com"
   },
   "dependencies": {
-    "gatsby": "^2.20.2",
+    "gatsby": "^2.22.15",
     "gatsby-plugin-google-analytics": "^2.3.2",
-    "gatsby-plugin-manifest": "^2.3.1",
-    "gatsby-plugin-react-helmet": "^3.2.0",
-    "gatsby-plugin-sass": "^2.2.0",
-    "node-sass": "^4.13.1",
+    "gatsby-plugin-manifest": "^2.4.9",
+    "gatsby-plugin-react-helmet": "^3.3.2",
+    "gatsby-plugin-sass": "^2.3.2",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
