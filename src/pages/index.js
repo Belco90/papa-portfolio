@@ -76,6 +76,7 @@ const IndexPage = () => (
             <ul className="feature-icons">
               <li className="fa-star">Animación</li>
               <li className="fa-hotel">Hostelería</li>
+              <li className="fa-bell">Recepción</li>
               <li className="fa-birthday-cake">Organización de actividades</li>
               <li className="fa-music">Música de baile</li>
               <li className="fa-comment">Don de gentes</li>
