@@ -9,7 +9,6 @@ import avatar from '../assets/images/avatar.jpeg';
 
 import pic1 from '../assets/images/picture-class.jpeg';
 import pic2 from '../assets/images/picture-chef.jpeg';
-import pic3 from '../assets/images/picture-painting.jpeg';
 
 const sections = [
   { id: 'about', name: 'Sobre mí' },
@@ -117,19 +116,6 @@ const IndexPage = () => (
                   <p>
                     Con el Jefe de cocina y los Maitres de Transhotel Puerto
                     S.A. Fuengirola (Málaga)
-                  </p>
-                </div>
-              </article>
-              <article>
-                <div className="image">
-                  <img
-                    src={pic3}
-                    alt="Cristóbal y Rocío mostrando el cuadro: un arbol con flores rojas sobre tonos verdes y azules"
-                  />
-                </div>
-                <div className="inner">
-                  <p>
-                    Colgando uno de los cuadros que pinté para mi amiga Rocío.
                   </p>
                 </div>
               </article>
