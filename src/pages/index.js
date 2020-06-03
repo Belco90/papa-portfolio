@@ -36,24 +36,23 @@ const IndexPage = () => (
             </p>
 
             <p>
-              Mi largo recorrido como animador turístico me ha permitido
-              adquirir muchos conocimientos del sector hostelero en general y de
-              las relaciones públicas en particular.
+              Mi largo recorrido como animador turístico me ha ayudado a
+              adquirir bastantes conocimientos del sector y en particular de las
+              relaciones públicas.
             </p>
 
             <p>
-              Tengo mucha experiencia a la hora de confeccionar programas de
-              actividades deportivas, lúdicas o culturales, animación infantil,
-              tercera edad, presentación y organización de todo tipo de
-              espectáculos, así como amplios conocimientos y ejecución de todo
-              tipo de música de baile.
+              Tengo experiencia a la hora de confeccionar programas de
+              animación, actividades deportivas, infantiles, tercera edad, y
+              conocimientos y ejecución de todo tipo de música de baile.
             </p>
 
             <p>
               Al mismo tiempo he desarrollado el trabajo de
               facturación/restaurante, que me ha permitido ampliar mis
               conocimientos sobre este departamento e igualmente sobre otros,
-              como por ejemplo recepcionista.
+              como por ejemplo recepción. Esto me ha posibilitado ejercer como
+              recepcionista en unos apartamentos durante los últimos meses.
             </p>
 
             <p>
@@ -116,8 +115,8 @@ const IndexPage = () => (
                 </div>
                 <div className="inner">
                   <p>
-                    Con el jefe de cocina y maîtres en hotel El Puerto Sol
-                    (Fuengirola, Málaga)
+                    Con el Jefe de cocina y los Maitres de Transhotel Puerto
+                    S.A. Fuengirola (Málaga)
                   </p>
                 </div>
               </article>
