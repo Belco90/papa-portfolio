@@ -51,14 +51,14 @@ const IndexPage = () => (
               facturación/restaurante, que me ha permitido ampliar mis
               conocimientos sobre este departamento e igualmente sobre otros,
               como por ejemplo recepción. Esto me ha posibilitado ejercer como
-              recepcionista en unos apartamentos durante los últimos meses.
+              recepcionista en unos apartamentos vacacionales durante los
+              últimos meses.
             </p>
 
             <p>
-              Tengo grandes dotes para el dibujo y la pintura, actividades que
-              considero mi hobby, e indudablemente un suplemento para mi
-              trabajo. Además tengo buenas ideas para cualquier tipo de
-              decoración.
+              Tengo dotes para el dibujo y la pintura, actividades que considero
+              mi hobby, e indudablemente un suplemento para mi trabajo. Además
+              tengo buenas ideas para cualquier tipo de decoración.
             </p>
 
             <p>
@@ -79,7 +79,6 @@ const IndexPage = () => (
               <li className="fa-birthday-cake">Organización de actividades</li>
               <li className="fa-music">Música de baile</li>
               <li className="fa-comment">Don de gentes</li>
-              <li className="fa-paint-brush">Pintura</li>
             </ul>
           </div>
         </section>
