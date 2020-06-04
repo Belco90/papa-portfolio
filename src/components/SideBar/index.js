@@ -3,8 +3,22 @@ import Footer from './Footer';
 import Header from './Header';
 import Nav from './Nav';
 import TopNav from './TopNav';
+import cv from '../../assets/others/curriculo-cristobal-beltran.pdf';
 import config from '../../../config';
 const pic = require('../../assets/images/avatar.jpeg');
+
+const SOCIAL_LINKS = [
+  {
+    icon: 'fa-envelope-o',
+    name: 'Email',
+    url: 'mailto:cbs.m61@gmail.com',
+  },
+  {
+    icon: 'fa-file-pdf-o',
+    name: 'Currículo',
+    url: cv,
+  },
+];
 
 export default function SideBar({ sections = [] }) {
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
@@ -21,7 +35,7 @@ export default function SideBar({ sections = [] }) {
           heading={config.heading}
         />
         <Nav sections={sections} onSectionClick={toggleHeader} />
-        <Footer socialLinks={config.socialLinks} />
+        <Footer socialLinks={SOCIAL_LINKS} />
       </section>
     </div>
   );
