@@ -1,3 +1,5 @@
+const cv = require('./src/assets/others/curriculo-cristobal-beltran.pdf');
+
 module.exports = {
   siteTitle: 'Cristóbal Beltrán', // <title>
   manifestName: 'Cristóbal',
@@ -14,6 +16,11 @@ module.exports = {
       icon: 'fa-envelope-o',
       name: 'Email',
       url: 'mailto:cbs.m61@gmail.com',
+    },
+    {
+      icon: 'fa-file-pdf-o',
+      name: 'Currículo',
+      url: cv,
     },
   ],
 };

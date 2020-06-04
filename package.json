@@ -10,19 +10,6 @@
     "name": "Mario Beltrán",
     "email": "Belco90@gmail.com"
   },
-  "dependencies": {
-    "gatsby": "^2.22.15",
-    "gatsby-plugin-google-analytics": "^2.3.2",
-    "gatsby-plugin-manifest": "^2.4.9",
-    "gatsby-plugin-react-helmet": "^3.3.2",
-    "gatsby-plugin-sass": "^2.3.2",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0",
-    "react-scrollspy": "^3.4.2",
-    "smoothscroll-polyfill": "^0.4.4"
-  },
   "scripts": {
     "start": "yarn develop",
     "develop": "gatsby develop",
@@ -32,6 +19,20 @@
     "clean": "rimraf .cache public",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.22.15",
+    "gatsby-plugin-google-analytics": "^2.3.2",
+    "gatsby-plugin-manifest": "^2.4.9",
+    "gatsby-plugin-react-helmet": "^3.3.2",
+    "gatsby-plugin-sass": "^2.3.2",
+    "gatsby-source-filesystem": "^2.3.10",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "react-scrollspy": "^3.4.2",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "husky": "^4.2.5",
