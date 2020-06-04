@@ -8,7 +8,8 @@ import banner from '../assets/images/banner.jpeg';
 import avatar from '../assets/images/avatar.jpeg';
 
 import pic1 from '../assets/images/picture-class.jpeg';
-import pic2 from '../assets/images/picture-chef.jpeg';
+import pic2 from '../assets/images/picture-cabaret.jpeg';
+import pic3 from '../assets/images/picture-chef.jpeg';
 
 const sections = [
   { id: 'about', name: 'Sobre mí' },
@@ -107,8 +108,19 @@ const IndexPage = () => (
               </article>
               <article>
                 <div className="image">
+                  <img src={pic2} alt="Cristóbal vestido de" />
+                </div>
+                <div className="inner">
+                  <p>
+                    Representando "Cabaret Español" en hotel Atlanterra Sol,
+                    Zahara de los Atunes (Cádiz)
+                  </p>
+                </div>
+              </article>
+              <article>
+                <div className="image">
                   <img
-                    src={pic2}
+                    src={pic3}
                     alt="Cristóbal junto al jefe de cocina, con los maîtres a ambos lados"
                   />
                 </div>
