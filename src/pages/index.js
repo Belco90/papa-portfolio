@@ -35,9 +35,9 @@ const IndexPage = () => (
             </p>
 
             <p>
-              Mi largo recorrido como animador turístico me ha ayudado a
-              adquirir bastantes conocimientos del sector y en particular de las
-              relaciones públicas.
+              Mi largo recorrido como animador turístico me ha permitido
+              adquirir conocimientos del sector en general y de las relaciones
+              públicas en particular.
             </p>
 
             <p>
