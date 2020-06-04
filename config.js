@@ -8,7 +8,7 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/images/icon.png',
   authorName: 'Cristóbal Beltrán',
-  heading: 'El mejor animador del mundo y parte del extranjero',
+  heading: '',
   socialLinks: [
     {
       icon: 'fa-envelope-o',

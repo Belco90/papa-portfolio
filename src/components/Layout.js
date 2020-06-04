@@ -46,9 +46,13 @@ class Layout extends Component {
               meta={[
                 {
                   name: 'description',
-                  content: 'Portfolio de Cristóbal Beltrán',
+                  content: 'Animación turística y hostelería',
                 },
-                { name: 'keywords', content: 'animador, hostelería' },
+                {
+                  name: 'keywords',
+                  content:
+                    'animación, hostelería, recepción, restauración, animador, hostelero, recepcionista',
+                },
               ]}
             >
               <html lang="en" />
