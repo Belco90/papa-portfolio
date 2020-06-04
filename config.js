@@ -17,10 +17,5 @@ module.exports = {
       name: 'Email',
       url: 'mailto:cbs.m61@gmail.com',
     },
-    {
-      icon: 'fa-file-pdf-o',
-      name: 'Currículo',
-      url: cv,
-    },
   ],
 };
