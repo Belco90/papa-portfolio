@@ -3,6 +3,8 @@ const config = require('./config');
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
+    heading: config.heading,
+    author: config.authorName,
   },
   plugins: [
     'gatsby-plugin-react-helmet',

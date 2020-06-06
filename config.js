@@ -8,5 +8,5 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/images/icon.png',
   authorName: 'Cristóbal Beltrán',
-  heading: '',
+  heading: 'Animación turística y hostelería',
 };

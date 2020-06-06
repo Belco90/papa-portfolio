@@ -35,6 +35,7 @@ class Layout extends Component {
             site {
               siteMetadata {
                 title
+                heading
               }
             }
           }
@@ -46,7 +47,7 @@ class Layout extends Component {
               meta={[
                 {
                   name: 'description',
-                  content: 'Animación turística y hostelería',
+                  content: data.site.siteMetadata.heading,
                 },
                 {
                   name: 'keywords',
