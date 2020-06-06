@@ -10,6 +10,7 @@ import avatar from '../assets/images/avatar.jpeg';
 
 import pic1 from '../assets/images/picture-class.jpeg';
 import pic2 from '../assets/images/picture-cabaret.jpeg';
+import pic2_2 from '../assets/images/picture-west-side-story.jpeg';
 import pic3 from '../assets/images/picture-chef.jpeg';
 
 const sections = [
@@ -130,12 +131,21 @@ const IndexPage = () => {
                 </article>
                 <article>
                   <div className="image">
-                    <img src={pic2} alt="Cristóbal vestido de" />
+                    <img
+                      src={pic2_2}
+                      alt="Cristóbal con su compañero en 'West Side Story'"
+                    />
                   </div>
-                  <div className="inner">
+                  <div className="image">
+                    <img
+                      src={pic2}
+                      alt="Cristóbal caracterizado para 'Cabaret Español'"
+                    />
+                  </div>
+                  <div className="footer">
                     <p>
-                      Representando "Cabaret Español" en hotel Atlanterra Sol,
-                      Zahara de los Atunes (Cádiz)
+                      Representando cabarets en hotel Atlanterra Sol, Zahara de
+                      los Atunes (Cádiz)
                     </p>
                   </div>
                 </article>

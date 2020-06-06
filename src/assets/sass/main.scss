@@ -1262,6 +1262,10 @@ input[type='button'],
         margin-bottom: 0;
       }
     }
+
+    .footer {
+      margin-top: _size(element-margin);
+    }
   }
 }
 
