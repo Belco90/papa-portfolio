@@ -3,7 +3,6 @@ import Footer from './Footer';
 import Header from './Header';
 import Nav from './Nav';
 import TopNav from './TopNav';
-import cv from '../../assets/others/curriculo-cristobal-beltran.pdf';
 import config from '../../../config';
 const pic = require('../../assets/images/avatar.jpeg');
 
@@ -16,7 +15,7 @@ const SOCIAL_LINKS = [
   {
     icon: 'fa-file-pdf-o',
     name: 'Currículo',
-    url: cv,
+    url: '/curriculo-cristobal-beltran.pdf',
   },
 ];
 
