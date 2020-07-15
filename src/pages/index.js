@@ -12,6 +12,7 @@ import pic1 from '../assets/images/picture-class.jpeg';
 import pic2 from '../assets/images/picture-cabaret.jpeg';
 import pic2_2 from '../assets/images/picture-west-side-story.jpeg';
 import pic3 from '../assets/images/picture-chef.jpeg';
+import pic4 from '../assets/images/picture-cabaret-2.jpeg';
 
 const sections = [
   { id: 'about', name: 'Sobre mí' },
@@ -146,6 +147,19 @@ const IndexPage = () => {
                     <p>
                       Representando cabarets en hotel Atlanterra Sol, Zahara de
                       los Atunes (Cádiz)
+                    </p>
+                  </div>
+                </article>
+                <article>
+                  <div className="image">
+                    <img
+                      src={pic4}
+                      alt="Cristóbal junto a su compañera caracterizados para el cabaret"
+                    />
+                  </div>
+                  <div className="inner">
+                    <p>
+                      Cabaret 2 Pax. Transhotel Puerto S.A. Fuengirola (Málaga)
                     </p>
                   </div>
                 </article>
