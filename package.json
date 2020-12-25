@@ -17,7 +17,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
-    "format": "prettier --write '**/*.js'",
+    "prettier": "prettier \"./**/*.{js,jsx,ts,tsx}\"",
+    "format": "yarn prettier --write",
+    "format:check": "yarn prettier --check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

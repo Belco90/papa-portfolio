@@ -9,4 +9,4 @@ module.exports = {
   manifestIcon: 'src/assets/images/icon.png',
   authorName: 'Cristóbal Beltrán',
   heading: 'Animación turística y hostelería',
-};
+}
