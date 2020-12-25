@@ -51,7 +51,7 @@
   "bugs": {
     "url": "https://github.com/Belco90/papa-portfolio/issues"
   },
-  "homepage": "https://cristobal.netlify.app",
+  "homepage": "https://cristobalbeltran.es/",
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
