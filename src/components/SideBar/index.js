@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import Footer from './Footer';
-import Header from './Header';
-import Nav from './Nav';
-import TopNav from './TopNav';
-import config from '../../../config';
-const pic = require('../../assets/images/avatar.jpeg');
+import React, { useState } from 'react'
+import Footer from './Footer'
+import Header from './Header'
+import Nav from './Nav'
+import TopNav from './TopNav'
+import config from '../../../config'
+const pic = require('../../assets/images/avatar.jpeg')
 
 const SOCIAL_LINKS = [
   {
@@ -17,12 +17,12 @@ const SOCIAL_LINKS = [
     name: 'Currículo',
     url: '/curriculo-cristobal-beltran.pdf',
   },
-];
+]
 
 export default function SideBar({ sections = [] }) {
-  const [isHeaderOpen, setIsHeaderOpen] = useState(false);
+  const [isHeaderOpen, setIsHeaderOpen] = useState(false)
 
-  const toggleHeader = () => setIsHeaderOpen(!isHeaderOpen);
+  const toggleHeader = () => setIsHeaderOpen(!isHeaderOpen)
 
   return (
     <div className={`${isHeaderOpen ? 'header-visible' : ' '}`}>
@@ -37,5 +37,5 @@ export default function SideBar({ sections = [] }) {
         <Footer socialLinks={SOCIAL_LINKS} />
       </section>
     </div>
-  );
+  )
 }

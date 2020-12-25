@@ -1,25 +1,25 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Layout from '../components/Layout';
-import PageFooter from '../components/PageFooter';
-import SideBar from '../components/SideBar';
+import Layout from '../components/Layout'
+import PageFooter from '../components/PageFooter'
+import SideBar from '../components/SideBar'
 
-import banner from '../assets/images/banner.jpeg';
-import avatar from '../assets/images/avatar.jpeg';
+import banner from '../assets/images/banner.jpeg'
+import avatar from '../assets/images/avatar.jpeg'
 
-import pic1 from '../assets/images/picture-class.jpeg';
-import pic2 from '../assets/images/picture-cabaret.jpeg';
-import pic2_2 from '../assets/images/picture-west-side-story.jpeg';
-import pic3 from '../assets/images/picture-chef.jpeg';
-import pic4 from '../assets/images/picture-cabaret-2.jpeg';
+import pic1 from '../assets/images/picture-class.jpeg'
+import pic2 from '../assets/images/picture-cabaret.jpeg'
+import pic2_2 from '../assets/images/picture-west-side-story.jpeg'
+import pic3 from '../assets/images/picture-chef.jpeg'
+import pic4 from '../assets/images/picture-cabaret-2.jpeg'
 
 const sections = [
   { id: 'about', name: 'Sobre mí' },
   { id: 'skills', name: 'Habilidades' },
   { id: 'moments', name: 'Momentos' },
   { id: 'contact', name: 'Contacto' },
-];
+]
 const IndexPage = () => {
   const { site } = useStaticQuery(
     graphql`
@@ -32,7 +32,7 @@ const IndexPage = () => {
         }
       }
     `
-  );
+  )
 
   return (
     <Layout>
@@ -242,7 +242,7 @@ const IndexPage = () => {
         <PageFooter />
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage

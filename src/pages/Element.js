@@ -1,14 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-import Layout from '../components/Layout';
-import PageFooter from '../components/PageFooter';
-import SideBar from '../components/SideBar';
-import banner from '../assets/images/banner.jpeg';
+import Layout from '../components/Layout'
+import PageFooter from '../components/PageFooter'
+import SideBar from '../components/SideBar'
+import banner from '../assets/images/banner.jpeg'
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
-import avatar from '../assets/images/avatar.jpeg';
+import pic1 from '../assets/images/pic01.jpg'
+import pic2 from '../assets/images/pic02.jpg'
+import pic3 from '../assets/images/pic03.jpg'
+import avatar from '../assets/images/avatar.jpeg'
 
 const sections = [
   { id: 'one', name: 'Text' },
@@ -17,7 +17,7 @@ const sections = [
   { id: 'four', name: 'Buttons' },
   { id: 'five', name: 'Form' },
   { id: 'six', name: 'Image' },
-];
+]
 const IndexPage = () => (
   <Layout>
     <SideBar sections={sections} />
@@ -675,6 +675,6 @@ const IndexPage = () => (
       <PageFooter />
     </section>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage

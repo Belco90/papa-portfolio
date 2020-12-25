@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function Header({ title, avatar }) {
   return (
@@ -8,5 +8,5 @@ export default function Header({ title, avatar }) {
       </span>
       <h1 id="logo">{title}</h1>
     </header>
-  );
+  )
 }

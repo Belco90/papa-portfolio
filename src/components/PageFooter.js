@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default function PageFooter() {
   return (
@@ -7,5 +7,5 @@ export default function PageFooter() {
         <li>&copy; Mario Beltrán. All rights reserved.</li>
       </ul>
     </div>
-  );
+  )
 }
