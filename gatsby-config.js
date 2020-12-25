@@ -34,5 +34,7 @@ module.exports = {
         trackingId: process.env.GA_ID,
       },
     },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
   ],
 }

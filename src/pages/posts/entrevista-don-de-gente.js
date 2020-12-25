@@ -1,8 +1,10 @@
 import * as React from 'react'
 import Layout from '../../components/Layout'
 import PageFooter from '../../components/PageFooter'
+import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
-const DonDeGentePage = () => {
+const DonDeGentePage = ({ data }) => {
   return (
     // TODO: pass props to layout
     <Layout>
@@ -13,6 +15,11 @@ const DonDeGentePage = () => {
         </header>
 
         <h4>Cristóbal, ¿son muchas tus experiencias de trabajo en tu CV?</h4>
+        <Img
+          fixed={data.file.childImageSharp.fixed}
+          alt="Cristóbal sentado haciendo la facturación"
+          style={{ marginLeft: '10px', float: 'right' }}
+        />
         <p>
           Sí, ya en mi época de estudiante pintaba cuadros de paisajes por
           encargo en la trastienda del negocio de mis padres, donde también
@@ -319,5 +326,17 @@ const DonDeGentePage = () => {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "images/entrevista-don-de-gente.png" }) {
+      childImageSharp {
+        fixed(width: 400) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+  }
+`
 
 export default DonDeGentePage
