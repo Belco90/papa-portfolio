@@ -7,7 +7,11 @@ import { graphql } from 'gatsby'
 
 const DonDeGentePage = ({ data }) => {
   return (
-    <Layout extraTitle="Don de Gentes">
+    <Layout
+      extraTitle="Don de Gentes"
+      extraKeywords="entrevista, don de gentes"
+      metaDescription="Entrevista a Cristóbal: Don de Gentes"
+    >
       <SideBar shouldShowBackHome />
       <div id="wrapper">
         <div className="container">

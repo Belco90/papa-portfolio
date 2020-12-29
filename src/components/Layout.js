@@ -26,8 +26,21 @@ class Layout extends Component {
   }
 
   render() {
-    const { children, extraTitle } = this.props
+    const {
+      children,
+      extraTitle,
+      metaDescription,
+      extraKeywords = '',
+    } = this.props
     const { isPreloaded } = this.state
+
+    const finalKeywords = [
+      'animación, hostelería, recepción, restauración, animador, hostelero, recepcionista',
+      extraKeywords,
+    ]
+      .filter(Boolean)
+      .join(', ')
+
     return (
       <StaticQuery
         query={graphql`
@@ -49,12 +62,11 @@ class Layout extends Component {
               meta={[
                 {
                   name: 'description',
-                  content: data.site.siteMetadata.heading,
+                  content: metaDescription || data.site.siteMetadata.heading,
                 },
                 {
                   name: 'keywords',
-                  content:
-                    'animación, hostelería, recepción, restauración, animador, hostelero, recepcionista',
+                  content: finalKeywords,
                 },
               ]}
             >
