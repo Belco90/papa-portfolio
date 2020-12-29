@@ -19,6 +19,7 @@ const DonDeGentePage = ({ data }) => {
           fixed={data.file.childImageSharp.fixed}
           alt="Cristóbal sentado haciendo la facturación"
           style={{ marginLeft: '10px', float: 'right' }}
+          className="don-de-gentes"
         />
         <p>
           Sí, ya en mi época de estudiante pintaba cuadros de paisajes por
@@ -313,7 +314,7 @@ const DonDeGentePage = ({ data }) => {
         </p>
 
         <div className="mb">
-          <em>Fuente: </em>
+          <em>Entrevista original: </em>
           <a href="https://www.italianinspagna.org/art/cristobal-beltran-don-de-gente.html">
             Associazione Italiani in Spagna
           </a>
