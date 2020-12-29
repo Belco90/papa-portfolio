@@ -4,6 +4,7 @@ import Header from './Header'
 import Nav from './Nav'
 import TopNav from './TopNav'
 import config from '../../../config'
+import { Link } from 'gatsby'
 const pic = require('../../assets/images/avatar.jpeg')
 
 const SOCIAL_LINKS = [
@@ -19,7 +20,7 @@ const SOCIAL_LINKS = [
   },
 ]
 
-export default function SideBar({ sections = [] }) {
+export default function SideBar({ sections = [], shouldShowBackHome = false }) {
   const [isHeaderOpen, setIsHeaderOpen] = useState(false)
 
   const toggleHeader = () => setIsHeaderOpen(!isHeaderOpen)
@@ -34,6 +35,15 @@ export default function SideBar({ sections = [] }) {
           heading={config.heading}
         />
         <Nav sections={sections} onSectionClick={toggleHeader} />
+        {shouldShowBackHome && (
+          <nav id="nav">
+            <ul>
+              <li>
+                <Link to="/">Volver a inicio</Link>
+              </li>
+            </ul>
+          </nav>
+        )}
         <Footer socialLinks={SOCIAL_LINKS} />
       </section>
     </div>
