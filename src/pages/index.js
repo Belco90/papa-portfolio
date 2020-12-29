@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 
 import Layout from '../components/Layout'
 import PageFooter from '../components/PageFooter'
@@ -17,6 +17,7 @@ import pic4 from '../assets/images/picture-cabaret-2.jpeg'
 const sections = [
   { id: 'about', name: 'Sobre mí' },
   { id: 'skills', name: 'Habilidades' },
+  { id: 'posts', name: 'Artículos' },
   { id: 'moments', name: 'Momentos' },
   { id: 'contact', name: 'Contacto' },
 ]
@@ -105,6 +106,20 @@ const IndexPage = () => {
                 </li>
                 <li className="fa-music">Música de baile</li>
                 <li className="fa-comment">Don de gentes</li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="posts">
+            <div className="container">
+              <h3>Artículos</h3>
+
+              <ul>
+                <li>
+                  <Link to="/posts/entrevista-don-de-gentes">
+                    Entrevista: "Don de Gentes"
+                  </Link>
+                </li>
               </ul>
             </div>
           </section>
