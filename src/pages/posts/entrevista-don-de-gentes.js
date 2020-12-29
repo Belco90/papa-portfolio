@@ -10,7 +10,7 @@ const DonDeGentePage = ({ data }) => {
     <Layout>
       <div className="container">
         <header className="major">
-          <h2>"Don de Gente"</h2>
+          <h2>"Don de Gentes"</h2>
           <p>Entrevista de Paola Pacifici</p>
         </header>
 
@@ -112,7 +112,7 @@ const DonDeGentePage = ({ data }) => {
 
         <h4>
           Te gustan mucho las relaciones públicas, entonces tienes{' '}
-          <em>don de gente</em>. ¿Qué es?
+          <em>don de gentes</em>. ¿Qué es?
         </h4>
 
         <p>
@@ -121,7 +121,7 @@ const DonDeGentePage = ({ data }) => {
           con toda la humildad.
         </p>
         <p>
-          Entiendo que a una persona con <em>don de gente</em> no la hace su
+          Entiendo que a una persona con <em>don de gentes</em> no la hace su
           aspecto físico, sino más bien la forma de relacionarse con los demás.
           Tampoco creo que tenga nada que ver con la edad, pues siempre se puede
           hacer la vida más agradable a los demás.
