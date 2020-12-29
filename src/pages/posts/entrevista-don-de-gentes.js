@@ -7,8 +7,7 @@ import { graphql } from 'gatsby'
 
 const DonDeGentePage = ({ data }) => {
   return (
-    // TODO: pass props to layout
-    <Layout>
+    <Layout extraTitle="Don de Gentes">
       <SideBar shouldShowBackHome />
       <div id="wrapper">
         <div className="container">

@@ -26,7 +26,7 @@ class Layout extends Component {
   }
 
   render() {
-    const { children } = this.props
+    const { children, extraTitle } = this.props
     const { isPreloaded } = this.state
     return (
       <StaticQuery
@@ -43,7 +43,9 @@ class Layout extends Component {
         render={(data) => (
           <>
             <Helmet
-              title={data.site.siteMetadata.title}
+              title={[extraTitle, data.site.siteMetadata.title]
+                .filter(Boolean)
+                .join(' - ')}
               meta={[
                 {
                   name: 'description',
