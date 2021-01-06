@@ -17,16 +17,19 @@ const DonDeGentePage = ({ data }) => {
         <div className="container">
           <header className="major">
             <h2>"Don de Gentes"</h2>
-            <p>Entrevista de Paola Pacifici</p>
+            <p>
+              Entrevista de Paola Pacifici, Periodista y Presidenta de la
+              Asociación Nacional Italiana en España.
+            </p>
           </header>
 
-          <h4>Cristóbal, ¿son muchas tus experiencias de trabajo en tu CV?</h4>
           <Img
             fixed={data.file.childImageSharp.fixed}
             alt="Cristóbal sentado haciendo la facturación"
             style={{ marginLeft: '10px', float: 'right' }}
             className="don-de-gentes"
           />
+          <h4>Cristóbal, ¿son muchas tus experiencias de trabajo en tu CV?</h4>
           <p>
             Sí, ya en mi época de estudiante pintaba cuadros de paisajes por
             encargo en la trastienda del negocio de mis padres, donde también
