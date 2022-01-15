@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         brand: colors.red,
       },
+      fontFamily: {
+        sans: '"Lato", sans-serif',
+      },
     },
   },
   plugins: [],
