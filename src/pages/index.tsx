@@ -117,7 +117,7 @@ const HomePage = () => {
           <ul className="list-disc list-inside">
             <li>
               <Link href="/publicaciones/entrevista-don-de-gentes">
-                <a className="underline underline-offset-1 hover:text-brand-500 visited:text-brand-800 transition-colors">
+                <a className="underline underline-offset-1 decoration-brand-500 hover:text-brand-500 visited:text-brand-800 transition-colors">
                   Entrevista: &quot;Don de Gentes&quot;
                 </a>
               </Link>

@@ -341,7 +341,7 @@ const EntrevistaDonDeGentesPage = () => {
           href="https://www.italianinspagna.org/art/cristobal-beltran-don-de-gente.html"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline underline-offset-1 hover:text-brand-500 visited:text-brand-800 transition-colors"
+          className="underline underline-offset-1 decoration-brand-500 hover:text-brand-500 visited:text-brand-800 transition-colors"
         >
           Associazione Italiani in Spagna
         </a>
