@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { ReactNode } from 'react'
 import {
   FaStar,
@@ -88,6 +89,21 @@ const HomePage = () => {
                 {title}
               </li>
             ))}
+          </ul>
+        </section>
+
+        <hr className="my-8 border-2" />
+
+        <section id="posts">
+          <h2 className="text-3xl font-bold mb-6">Publicaciones</h2>
+          <ul className="list-disc list-inside">
+            <li>
+              <Link href="/publicaciones/entrevista-don-de-gentes">
+                <a className="underline underline-offset-1 hover:text-brand-500 visited: text-brand-800">
+                  Entrevista: &quot;Don de Gentes&quot;
+                </a>
+              </Link>
+            </li>
           </ul>
         </section>
       </main>
