@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import Image from 'next/image'
 
 import {
@@ -12,13 +12,15 @@ import {
 } from 'react-icons/fa'
 
 import ContactForm from '~/components/ContactForm'
+import Layout from '~/components/Layout'
 
-import banner from '@app-public/images/banner.jpeg'
 import pictureWorkshop from '@app-public/images/picture-workshop.jpeg'
 import pictureWestSideStory from '@app-public/images/picture-west-side-story.jpeg'
 import pictureCabaretCadiz from '@app-public/images/picture-cabaret-cadiz.jpeg'
 import pictureCabaretMalaga from '@app-public/images/picture-cabaret-malaga.jpeg'
 import pictureChef from '@app-public/images/picture-chef.jpeg'
+import MainHeader from '~/components/MainHeader'
+import Link from '~/components/Link'
 
 const SKILLS_COLLECTION: Array<{ icon: ReactNode; title: string }> = [
   { icon: <FaStar />, title: 'Animación' },
@@ -31,179 +33,157 @@ const SKILLS_COLLECTION: Array<{ icon: ReactNode; title: string }> = [
 
 const HomePage = () => {
   return (
-    <div>
-      <Image
-        src={banner}
-        alt="Playa de Fuengirola al amanecer"
-        priority
-        placeholder="blur"
-        quality={100}
-      />
+    <Layout shouldDisplayBanner>
+      <MainHeader subtitle="Animación turística y hostelería">
+        Cristóbal Beltran
+      </MainHeader>
 
-      <main className="container mx-auto px-5 py-10 text-gray-700 text-lg">
-        <header className="my-10 text-center">
-          <h1 className="text-brand-500 text-3xl md:text-5xl font-bold mb-1">
-            Cristóbal Beltrán
-          </h1>
-          <div
-            role="doc-subtitle"
-            className="text-xl md:text-3xl border-neutral-300 border-t-2 mx-4 md:mx-20 pt-1"
-          >
-            Animación turística y hostelería
-          </div>
-        </header>
+      <section id="about" className="space-y-5 text-justify">
+        {/* TODO: show profilePic when sidebar is hidden */}
+        <p>
+          Hola, navegante. Soy Cristóbal y quiero hablarte un poco sobre mí y mi
+          trayectoria.
+        </p>
 
-        <section id="about" className="space-y-5 text-justify">
-          {/* TODO: show profilePic when sidebar is hidden */}
-          <p>
-            Hola, navegante. Soy Cristóbal y quiero hablarte un poco sobre mí y
-            mi trayectoria.
-          </p>
+        <p>
+          Mi largo recorrido como animador turístico me ha permitido adquirir
+          conocimientos del sector en general y de las relaciones públicas en
+          particular.
+        </p>
 
-          <p>
-            Mi largo recorrido como animador turístico me ha permitido adquirir
-            conocimientos del sector en general y de las relaciones públicas en
-            particular.
-          </p>
+        <p>
+          Tengo experiencia a la hora de confeccionar programas de animación,
+          actividades deportivas, infantiles, tercera edad, y conocimientos y
+          ejecución de todo tipo de música de baile.
+        </p>
 
-          <p>
-            Tengo experiencia a la hora de confeccionar programas de animación,
-            actividades deportivas, infantiles, tercera edad, y conocimientos y
-            ejecución de todo tipo de música de baile.
-          </p>
+        <p>
+          Al mismo tiempo he desarrollado el trabajo de facturación/restaurante,
+          que me ha permitido ampliar mis conocimientos sobre este departamento
+          e igualmente sobre otros, como por ejemplo recepción. Esto me ha
+          posibilitado ejercer como recepcionista en unos apartamentos
+          vacacionales durante los últimos meses.
+        </p>
 
-          <p>
-            Al mismo tiempo he desarrollado el trabajo de
-            facturación/restaurante, que me ha permitido ampliar mis
-            conocimientos sobre este departamento e igualmente sobre otros, como
-            por ejemplo recepción. Esto me ha posibilitado ejercer como
-            recepcionista en unos apartamentos vacacionales durante los últimos
-            meses.
-          </p>
+        <p>
+          Tengo dotes para el dibujo y la pintura, actividades que considero mi
+          hobby, e indudablemente un suplemento para mi trabajo. Además tengo
+          buenas ideas para cualquier tipo de decoración.
+        </p>
 
-          <p>
-            Tengo dotes para el dibujo y la pintura, actividades que considero
-            mi hobby, e indudablemente un suplemento para mi trabajo. Además
-            tengo buenas ideas para cualquier tipo de decoración.
-          </p>
+        <p>
+          Aparte de estos conocimientos, me gustaría resaltar la base principal
+          de mi trabajo: las relaciones públicas, el llamado “don de gentes”. La
+          relación diaria con los clientes es algo que me sigue entusiasmando.
+        </p>
+      </section>
+      <hr className="my-8 border-2" />
+      <section id="skills">
+        <h2 className="text-3xl font-bold mb-6">Habilidades</h2>
 
-          <p>
-            Aparte de estos conocimientos, me gustaría resaltar la base
-            principal de mi trabajo: las relaciones públicas, el llamado “don de
-            gentes”. La relación diaria con los clientes es algo que me sigue
-            entusiasmando.
-          </p>
-        </section>
-        <hr className="my-8 border-2" />
-        <section id="skills">
-          <h2 className="text-3xl font-bold mb-6">Habilidades</h2>
-
-          <ul className="grid md:grid-cols-2 gap-4">
-            {SKILLS_COLLECTION.map(({ title, icon }) => (
-              <li key={title} className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-red-500 text-white rounded-full flex justify-center items-center">
-                  {icon}
-                </div>
-                {title}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <hr className="my-8 border-2" />
-
-        <section id="posts">
-          <h2 className="text-3xl font-bold mb-6">Publicaciones</h2>
-          <ul className="list-disc list-inside">
-            <li>
-              <Link href="/publicaciones/entrevista-don-de-gentes">
-                <a className="underline underline-offset-1 decoration-brand-500 hover:text-brand-500 visited:text-brand-800 transition-colors">
-                  Entrevista: &quot;Don de Gentes&quot;
-                </a>
-              </Link>
+        <ul className="grid md:grid-cols-2 gap-4">
+          {SKILLS_COLLECTION.map(({ title, icon }) => (
+            <li key={title} className="flex items-center gap-2">
+              <div className="w-10 h-10 bg-red-500 text-white rounded-full flex justify-center items-center">
+                {icon}
+              </div>
+              {title}
             </li>
-          </ul>
-        </section>
+          ))}
+        </ul>
+      </section>
 
-        <hr className="my-8 border-2" />
+      <hr className="my-8 border-2" />
 
-        <section id="highlights">
-          <h2 className="text-3xl font-bold mb-6">Destacados</h2>
+      <section id="posts">
+        <h2 className="text-3xl font-bold mb-6">Publicaciones</h2>
+        <ul className="list-disc list-inside">
+          <li>
+            <NextLink href="/publicaciones/entrevista-don-de-gentes" passHref>
+              <Link>Entrevista: &quot;Don de Gentes&quot;</Link>
+            </NextLink>
+          </li>
+        </ul>
+      </section>
 
-          <figure>
+      <hr className="my-8 border-2" />
+
+      <section id="highlights">
+        <h2 className="text-3xl font-bold mb-6">Destacados</h2>
+
+        <figure>
+          <Image
+            src={pictureWorkshop}
+            alt="Cristóbal de joven en el taller de decoración"
+            placeholder="blur"
+            className="rounded-md"
+          />
+          <figcaption className="italic">
+            En el taller, dónde aprendí diferentes técnicas de pintura y
+            decoración.
+          </figcaption>
+        </figure>
+        <hr className="my-4 border-1" />
+        <figure>
+          <div className="grid md:grid-cols-2 gap-3 items-center mb-1">
             <Image
-              src={pictureWorkshop}
-              alt="Cristóbal de joven en el taller de decoración"
+              src={pictureWestSideStory}
+              alt="Cristóbal con su compañero en 'West Side Story'"
               placeholder="blur"
               className="rounded-md"
             />
-            <figcaption className="italic">
-              En el taller, dónde aprendí diferentes técnicas de pintura y
-              decoración.
-            </figcaption>
-          </figure>
-          <hr className="my-4 border-1" />
-          <figure>
-            <div className="grid md:grid-cols-2 gap-3 items-center mb-1">
-              <Image
-                src={pictureWestSideStory}
-                alt="Cristóbal con su compañero en 'West Side Story'"
-                placeholder="blur"
-                className="rounded-md"
-              />
-              <Image
-                src={pictureCabaretCadiz}
-                alt="Cristóbal caracterizado para 'Cabaret Español'"
-                placeholder="blur"
-                className="rounded-md"
-              />
-            </div>
-            <figcaption className="italic">
-              Representando cabarets en hotel Atlanterra Sol, Zahara de los
-              Atunes (Cádiz)
-            </figcaption>
-          </figure>
-          <hr className="my-4 border-1" />
-          <figure>
             <Image
-              src={pictureCabaretMalaga}
-              alt="Cristóbal junto a su compañera caracterizados para el cabaret"
+              src={pictureCabaretCadiz}
+              alt="Cristóbal caracterizado para 'Cabaret Español'"
               placeholder="blur"
               className="rounded-md"
             />
-            <figcaption className="italic">
-              Cabaret 2 Pax. Transhotel Puerto S.A. Fuengirola (Málaga)
-            </figcaption>
-          </figure>
-          <hr className="my-4 border-1" />
-          <figure>
-            <Image
-              src={pictureChef}
-              alt="Cristóbal junto al jefe de cocina, con los maîtres a ambos lados"
-              placeholder="blur"
-              className="rounded-md"
-            />
-            <figcaption className="italic">
-              Con el Jefe de cocina y los Maitres de Transhotel Puerto S.A.
-              Fuengirola (Málaga)
-            </figcaption>
-          </figure>
-        </section>
+          </div>
+          <figcaption className="italic">
+            Representando cabarets en hotel Atlanterra Sol, Zahara de los Atunes
+            (Cádiz)
+          </figcaption>
+        </figure>
+        <hr className="my-4 border-1" />
+        <figure>
+          <Image
+            src={pictureCabaretMalaga}
+            alt="Cristóbal junto a su compañera caracterizados para el cabaret"
+            placeholder="blur"
+            className="rounded-md"
+          />
+          <figcaption className="italic">
+            Cabaret 2 Pax. Transhotel Puerto S.A. Fuengirola (Málaga)
+          </figcaption>
+        </figure>
+        <hr className="my-4 border-1" />
+        <figure>
+          <Image
+            src={pictureChef}
+            alt="Cristóbal junto al jefe de cocina, con los maîtres a ambos lados"
+            placeholder="blur"
+            className="rounded-md"
+          />
+          <figcaption className="italic">
+            Con el Jefe de cocina y los Maitres de Transhotel Puerto S.A.
+            Fuengirola (Málaga)
+          </figcaption>
+        </figure>
+      </section>
 
-        <hr className="my-8 border-2" />
+      <hr className="my-8 border-2" />
 
-        <section id="contact">
-          <h2 className="text-3xl font-bold mb-6">Contacto</h2>
+      <section id="contact">
+        <h2 className="text-3xl font-bold mb-6">Contacto</h2>
 
-          <p className="mb-4">
-            Contactarme solo te llevará un par de minutos rellenando el
-            siguiente formulario:
-          </p>
+        <p className="mb-4">
+          Contactarme solo te llevará un par de minutos rellenando el siguiente
+          formulario:
+        </p>
 
-          <ContactForm />
-        </section>
-      </main>
-    </div>
+        <ContactForm />
+      </section>
+    </Layout>
   )
 }
 

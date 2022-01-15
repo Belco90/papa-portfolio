@@ -1,6 +1,9 @@
 import type { ReactNode } from 'react'
 import Image from 'next/image'
 
+import Layout from '~/components/Layout'
+import Link from '~/components/Link'
+import MainHeader from '~/components/MainHeader'
 import pictureInterview from '@app-public/images/entrevista-don-de-gentes.png'
 
 interface InterviewElementProps {
@@ -21,19 +24,10 @@ const Answer = ({ children }: InterviewElementProps) => {
 
 const EntrevistaDonDeGentesPage = () => {
   return (
-    <main className="container mx-auto px-5 py-10 text-gray-700 text-lg">
-      <header className="my-10 text-center">
-        <h1 className="text-brand-500 text-3xl md:text-5xl font-bold mb-1">
-          &quot;Don de Gentes&quot;
-        </h1>
-        <div
-          role="doc-subtitle"
-          className="text-xl md:text-3xl border-neutral-300 border-t-2 mx-4 md:mx-20 pt-1"
-        >
-          Entrevista de Paola Pacifici, Periodista y Presidenta de la Asociación
-          Nacional Italiana en España.
-        </div>
-      </header>
+    <Layout>
+      <MainHeader subtitle="Entrevista de Paola Pacifici, Periodista y Presidenta de la Asociación Nacional Italiana en España.">
+        &quot;Don de Gentes&quot;
+      </MainHeader>
 
       <div className="pt-6 md:w-1/2 md:float-right md:pl-4">
         <Image
@@ -337,16 +331,14 @@ const EntrevistaDonDeGentesPage = () => {
 
       <div className="mt-12">
         <em>– Entrevista original: </em>
-        <a
+        <Link
           href="https://www.italianinspagna.org/art/cristobal-beltran-don-de-gente.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline underline-offset-1 decoration-brand-500 hover:text-brand-500 visited:text-brand-800 transition-colors"
+          isExternal
         >
           Associazione Italiani in Spagna
-        </a>
+        </Link>
       </div>
-    </main>
+    </Layout>
   )
 }
 
