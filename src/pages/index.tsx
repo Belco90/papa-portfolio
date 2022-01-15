@@ -37,10 +37,11 @@ const HomePage = () => {
         alt="Playa de Fuengirola al amanecer"
         priority
         placeholder="blur"
+        quality={100}
       />
 
       <main className="container mx-auto px-5 py-10 text-gray-700 text-lg">
-        <div className="my-10 text-center">
+        <header className="my-10 text-center">
           <h1 className="text-brand-500 text-3xl md:text-5xl font-bold mb-1">
             Cristóbal Beltrán
           </h1>
@@ -50,7 +51,7 @@ const HomePage = () => {
           >
             Animación turística y hostelería
           </div>
-        </div>
+        </header>
 
         <section id="about" className="space-y-5 text-justify">
           {/* TODO: show profilePic when sidebar is hidden */}
@@ -116,7 +117,7 @@ const HomePage = () => {
           <ul className="list-disc list-inside">
             <li>
               <Link href="/publicaciones/entrevista-don-de-gentes">
-                <a className="underline underline-offset-1 hover:text-brand-500 visited: text-brand-800">
+                <a className="underline underline-offset-1 hover:text-brand-500 visited:text-brand-800 transition-colors">
                   Entrevista: &quot;Don de Gentes&quot;
                 </a>
               </Link>
