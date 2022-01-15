@@ -11,7 +11,7 @@ import {
   FaComment,
 } from 'react-icons/fa'
 
-import ContactForm from '~/pages/components/ContactForm'
+import ContactForm from '~/components/ContactForm'
 
 import banner from '@app-public/images/banner.jpeg'
 import pictureWorkshop from '@app-public/images/picture-workshop.jpeg'
