@@ -11,6 +11,8 @@ import {
   FaComment,
 } from 'react-icons/fa'
 
+import ContactForm from '~/pages/components/ContactForm'
+
 import banner from '@app-public/images/banner.jpeg'
 import pictureWorkshop from '@app-public/images/picture-workshop.jpeg'
 import pictureWestSideStory from '@app-public/images/picture-west-side-story.jpeg'
@@ -44,7 +46,7 @@ const HomePage = () => {
           </h1>
           <div
             role="doc-subtitle"
-            className="text-xl md:text-3xl border-neutral-300 border-t-2 mx-4 md:mx-20"
+            className="text-xl md:text-3xl border-neutral-300 border-t-2 mx-4 md:mx-20 pt-1"
           >
             Animación turística y hostelería
           </div>
@@ -121,6 +123,7 @@ const HomePage = () => {
             </li>
           </ul>
         </section>
+
         <hr className="my-8 border-2" />
 
         <section id="highlights">
@@ -184,6 +187,19 @@ const HomePage = () => {
               Fuengirola (Málaga)
             </figcaption>
           </figure>
+        </section>
+
+        <hr className="my-8 border-2" />
+
+        <section id="contact">
+          <h2 className="text-3xl font-bold mb-6">Contacto</h2>
+
+          <p className="mb-4">
+            Contactarme solo te llevará un par de minutos rellenando el
+            siguiente formulario:
+          </p>
+
+          <ContactForm />
         </section>
       </main>
     </div>
