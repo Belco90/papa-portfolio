@@ -1,63 +1,21 @@
 {
-  "name": "papa-portfolio",
-  "version": "1.0.0",
-  "description": "Web de Cristóbal Beltrán Sánchez",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Belco90/papa-portfolio.git"
-  },
-  "author": {
-    "name": "Mario Beltrán",
-    "email": "Belco90@gmail.com"
-  },
+  "private": true,
   "scripts": {
-    "start": "yarn develop",
-    "develop": "gatsby develop",
-    "prebuild": "gatsby clean",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "rimraf .cache public",
-    "prettier": "prettier \"./**/*.{js,jsx,ts,tsx}\"",
-    "format": "yarn prettier --write",
-    "format:check": "yarn prettier --check",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "gatsby": "^2.29.2",
-    "gatsby-image": "^2.8.0",
-    "gatsby-plugin-google-analytics": "^2.8.0",
-    "gatsby-plugin-manifest": "^2.9.1",
-    "gatsby-plugin-react-helmet": "^3.7.0",
-    "gatsby-plugin-sass": "^2.8.0",
-    "gatsby-plugin-sharp": "^2.11.2",
-    "gatsby-source-filesystem": "^2.8.1",
-    "gatsby-transformer-sharp": "^2.9.0",
-    "node-sass": "^4.14.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-helmet": "^6.1.0",
-    "react-scrollspy": "^3.4.3",
-    "smoothscroll-polyfill": "^0.4.4"
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "husky": "^4.3.6",
-    "prettier": "2.2.1",
-    "pretty-quick": "^3.1.0"
-  },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "portfolio",
-    "website"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Belco90/papa-portfolio/issues"
-  },
-  "homepage": "https://cristobalbeltran.es/",
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "@types/node": "17.0.4",
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7",
+    "typescript": "4.5.4"
   }
 }
