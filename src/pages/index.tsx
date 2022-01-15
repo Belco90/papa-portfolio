@@ -1,3 +1,22 @@
+import type { ReactNode } from 'react'
+import {
+  FaStar,
+  FaBed,
+  FaBell,
+  FaBirthdayCake,
+  FaMusic,
+  FaComment,
+} from 'react-icons/fa'
+
+const SKILLS_COLLECTION: Array<{ icon: ReactNode; title: string }> = [
+  { icon: <FaStar />, title: 'Animación' },
+  { icon: <FaBed />, title: 'Hostelería' },
+  { icon: <FaBell />, title: 'Recepción' },
+  { icon: <FaBirthdayCake />, title: 'Organización de actividades' },
+  { icon: <FaMusic />, title: 'Música de baile' },
+  { icon: <FaComment />, title: 'Don de gentes' },
+]
+
 const HomePage = () => {
   return (
     <div>
@@ -5,15 +24,15 @@ const HomePage = () => {
         header bg will be placed here
       </div>
 
-      <main className="container mx-auto px-5 text-gray-700">
-        <div className="my-10">
+      <main className="container mx-auto px-5 py-10 text-gray-700 text-lg">
+        <div className="my-6">
           <h1 className="text-brand-500 text-5xl font-bold mb-1">
             Cristóbal Beltrán
           </h1>
           <p className="text-3xl font-bold">Animación turística y hostelería</p>
         </div>
 
-        <section className="space-y-5 text-lg">
+        <section id="about" className="space-y-5">
           {/* TODO: show profilePic when sidebar is hidden */}
           <p>
             Hola, navegante. Soy Cristóbal y quiero hablarte un poco sobre mí y
@@ -55,7 +74,22 @@ const HomePage = () => {
           </p>
         </section>
 
-        <hr className="my-4 border-2" />
+        <hr className="my-8 border-2" />
+
+        <section id="skills">
+          <h2 className="text-3xl font-bold mb-6">Habilidades</h2>
+
+          <ul className="grid md:grid-cols-2 gap-4">
+            {SKILLS_COLLECTION.map(({ title, icon }) => (
+              <li key={title} className="flex items-center gap-2">
+                <div className="w-10 h-10 bg-red-500 text-white rounded-full flex justify-center items-center">
+                  {icon}
+                </div>
+                {title}
+              </li>
+            ))}
+          </ul>
+        </section>
       </main>
     </div>
   )
