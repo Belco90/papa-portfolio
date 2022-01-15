@@ -38,13 +38,19 @@ const HomePage = () => {
       />
 
       <main className="container mx-auto px-5 py-10 text-gray-700 text-lg">
-        <div className="my-6">
-          <h1 className="text-brand-500 text-5xl font-bold mb-1">
+        <div className="my-10 text-center">
+          <h1 className="text-brand-500 text-3xl md:text-5xl font-bold mb-1">
             Cristóbal Beltrán
           </h1>
-          <p className="text-3xl font-bold">Animación turística y hostelería</p>
+          <div
+            role="doc-subtitle"
+            className="text-xl md:text-3xl border-neutral-300 border-t-2 mx-4 md:mx-20"
+          >
+            Animación turística y hostelería
+          </div>
         </div>
-        <section id="about" className="space-y-5">
+
+        <section id="about" className="space-y-5 text-justify">
           {/* TODO: show profilePic when sidebar is hidden */}
           <p>
             Hola, navegante. Soy Cristóbal y quiero hablarte un poco sobre mí y
