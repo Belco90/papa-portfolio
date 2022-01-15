@@ -1,5 +1,7 @@
-import Link from 'next/link'
 import type { ReactNode } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
 import {
   FaStar,
   FaBed,
@@ -8,6 +10,8 @@ import {
   FaMusic,
   FaComment,
 } from 'react-icons/fa'
+
+import banner from '@app-public/images/banner.jpeg'
 
 const SKILLS_COLLECTION: Array<{ icon: ReactNode; title: string }> = [
   { icon: <FaStar />, title: 'Animación' },
@@ -21,9 +25,12 @@ const SKILLS_COLLECTION: Array<{ icon: ReactNode; title: string }> = [
 const HomePage = () => {
   return (
     <div>
-      <div className="py-10 italic text-center bg-amber-200">
-        header bg will be placed here
-      </div>
+      <Image
+        src={banner}
+        alt="Playa de Fuengirola al amanecer"
+        priority
+        placeholder="blur"
+      />
 
       <main className="container mx-auto px-5 py-10 text-gray-700 text-lg">
         <div className="my-6">
