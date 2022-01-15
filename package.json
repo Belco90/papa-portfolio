@@ -1,5 +1,18 @@
 {
   "private": true,
+  "name": "papa-portfolio",
+  "version": "2.0.0",
+  "description": "Web de Cristóbal Beltrán Sánchez",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belco90/papa-portfolio.git"
+  },
+  "author": "Mario Beltrán",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Belco90/papa-portfolio/issues"
+  },
+  "homepage": "https://cristobalbeltran.es/",
   "scripts": {
     "start": "npm run dev",
     "dev": "next",
