@@ -79,7 +79,7 @@ const Sidenav = () => {
                 <NextLink href="/">
                   <a className="block w-full py-3">
                     <span className="flex items-center justify-center gap-2 hover:underline">
-                      <FaArrowLeft />
+                      <FaArrowLeft focusable={false} />
                       Volver a inicio
                     </span>
                   </a>

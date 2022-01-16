@@ -23,12 +23,15 @@ import MainHeader from '~/components/MainHeader'
 import Link from '~/components/Link'
 
 const SKILLS_COLLECTION: Array<{ icon: ReactNode; title: string }> = [
-  { icon: <FaStar />, title: 'Animación' },
-  { icon: <FaBed />, title: 'Hostelería' },
-  { icon: <FaBell />, title: 'Recepción' },
-  { icon: <FaBirthdayCake />, title: 'Organización de actividades' },
-  { icon: <FaMusic />, title: 'Música de baile' },
-  { icon: <FaComment />, title: 'Don de gentes' },
+  { icon: <FaStar focusable={false} />, title: 'Animación' },
+  { icon: <FaBed focusable={false} />, title: 'Hostelería' },
+  { icon: <FaBell focusable={false} />, title: 'Recepción' },
+  {
+    icon: <FaBirthdayCake focusable={false} />,
+    title: 'Organización de actividades',
+  },
+  { icon: <FaMusic focusable={false} />, title: 'Música de baile' },
+  { icon: <FaComment focusable={false} />, title: 'Don de gentes' },
 ]
 
 const HomePage = () => {
