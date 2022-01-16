@@ -4,6 +4,7 @@ const MyDocument = () => {
   return (
     <Html lang="es" className="scroll-pt-12 lg:scroll-pt-6">
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=optional"
           rel="stylesheet"
