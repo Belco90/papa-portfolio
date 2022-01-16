@@ -1,4 +1,5 @@
 import { useForm } from 'react-hook-form'
+import toast from 'react-hot-toast'
 
 const FORM_ENDPOINT = process.env.NEXT_PUBLIC_GETFORM_ENDPOINT
 
@@ -13,6 +14,18 @@ interface FormData {
   message: string
 }
 
+const ERROR_MESSAGE = (
+  <div>
+    Algo salió mal, pero recuerda que puedas contactarme en{' '}
+    <a
+      href="mailto:cbs.m61@gmail.com"
+      className="underline underline-offset-1 accent-red-500"
+    >
+      cbs.m61@gmail.com
+    </a>
+  </div>
+)
+
 const ContactForm = () => {
   const {
     register,
@@ -23,8 +36,8 @@ const ContactForm = () => {
 
   const handleFormSubmit = submitWrapper(async (data) => {
     if (!FORM_ENDPOINT) {
-      throw new Error('Missing form endpoint')
-      // TODO: show error toast
+      toast.error(ERROR_MESSAGE)
+      return
     }
 
     const formData = new FormData()
@@ -35,12 +48,10 @@ const ContactForm = () => {
     const resp = await fetch(FORM_ENDPOINT, { method: 'POST', body: formData })
 
     if (resp.ok) {
-      console.log('success')
-      // TODO: show success toast
+      toast.success('¡Mensaje enviado con éxito!')
       reset()
     } else {
-      console.log('fail')
-      // TODO: show error toast
+      toast.error(ERROR_MESSAGE)
     }
   })
 

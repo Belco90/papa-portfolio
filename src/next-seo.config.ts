@@ -1,6 +1,6 @@
 import type { DefaultSeoProps } from 'next-seo'
 
-export const DefaultSeoConfig: DefaultSeoProps = {
+export const DEFAULT_SEO_CONFIG: DefaultSeoProps = {
   titleTemplate: '%s | Cristóbal Beltrán',
   defaultTitle: 'Cristóbal Beltrán',
   description: 'Animación turística y hostelería',
