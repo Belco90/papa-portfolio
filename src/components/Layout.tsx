@@ -14,14 +14,16 @@ const Layout = ({ children, shouldDisplayBanner = false }: LayoutProps) => {
     <div className="flex flex-row min-h-screen ">
       <div className="flex flex-col w-screen md:w-fit">
         {shouldDisplayBanner ? (
-          <Image
-            src={banner}
-            alt="Playa de Fuengirola al amanecer"
-            priority
-            layout="responsive"
-            placeholder="blur"
-            quality={100}
-          />
+          <div>
+            <Image
+              src={banner}
+              alt="Playa de Fuengirola al amanecer"
+              priority
+              layout="responsive"
+              placeholder="blur"
+              quality={100}
+            />
+          </div>
         ) : (
           <div className="lg:h-4 bg-black" />
         )}
