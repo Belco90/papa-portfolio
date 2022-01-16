@@ -1,63 +1,52 @@
 {
+  "private": true,
   "name": "papa-portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Web de Cristóbal Beltrán Sánchez",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Belco90/papa-portfolio.git"
   },
-  "author": {
-    "name": "Mario Beltrán",
-    "email": "Belco90@gmail.com"
-  },
-  "scripts": {
-    "start": "yarn develop",
-    "develop": "gatsby develop",
-    "prebuild": "gatsby clean",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "rimraf .cache public",
-    "prettier": "prettier \"./**/*.{js,jsx,ts,tsx}\"",
-    "format": "yarn prettier --write",
-    "format:check": "yarn prettier --check",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "gatsby": "^2.29.2",
-    "gatsby-image": "^2.8.0",
-    "gatsby-plugin-google-analytics": "^2.8.0",
-    "gatsby-plugin-manifest": "^2.9.1",
-    "gatsby-plugin-react-helmet": "^3.7.0",
-    "gatsby-plugin-sass": "^2.8.0",
-    "gatsby-plugin-sharp": "^2.11.2",
-    "gatsby-source-filesystem": "^2.8.1",
-    "gatsby-transformer-sharp": "^2.9.0",
-    "node-sass": "^4.14.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-helmet": "^6.1.0",
-    "react-scrollspy": "^3.4.3",
-    "smoothscroll-polyfill": "^0.4.4"
-  },
-  "devDependencies": {
-    "husky": "^4.3.6",
-    "prettier": "2.2.1",
-    "pretty-quick": "^3.1.0"
-  },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "portfolio",
-    "website"
-  ],
+  "author": "Mario Beltrán",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Belco90/papa-portfolio/issues"
   },
   "homepage": "https://cristobalbeltran.es/",
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "next",
+    "build": "next build",
+    "serve": "next start",
+    "lint": "next lint",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier . --write --ignore-path .gitignore --ignore-unknown",
+    "prepare": "is-ci || husky install"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.4.0",
+    "classnames": "^2.3.1",
+    "next": "^12.0.8",
+    "next-seo": "^4.28.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.24.0",
+    "react-hot-toast": "^2.2.0",
+    "react-icons": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.18.5",
+    "@types/react": "^17.0.38",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.6.0",
+    "eslint-config-next": "^12.0.8",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^12.1.7",
+    "postcss": "^8.4.5",
+    "prettier": "2.5.1",
+    "tailwindcss": "^3.0.15",
+    "typescript": "^4.5.4"
   }
 }
