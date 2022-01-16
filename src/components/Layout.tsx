@@ -11,8 +11,8 @@ interface LayoutProps {
 
 const Layout = ({ children, shouldDisplayBanner = false }: LayoutProps) => {
   return (
-    <div className="flex flex-row min-h-screen ">
-      <div className="flex flex-col w-screen lg:w-fit">
+    <div className="flex flex-col min-h-screen lg:flex-row">
+      <div className="flex flex-col w-screen mt-10 lg:w-fit lg:mt-0">
         {shouldDisplayBanner ? (
           <div>
             <Image

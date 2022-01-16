@@ -4,7 +4,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 const MyDocument = () => {
   return (
-    <Html lang="es">
+    <Html lang="es" className="scroll-pt-12">
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=optional"

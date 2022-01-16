@@ -42,7 +42,6 @@ const HomePage = () => {
       </MainHeader>
 
       <section id="about" className="space-y-5 text-justify">
-        {/* TODO: show profilePic when sidebar is hidden */}
         <p>
           Hola, navegante. Soy Cristóbal y quiero hablarte un poco sobre mí y mi
           trayectoria.
