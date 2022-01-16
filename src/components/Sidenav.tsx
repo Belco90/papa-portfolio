@@ -7,11 +7,11 @@ import { FaRegEnvelopeOpen, FaRegFilePdf } from 'react-icons/fa'
 import avatar from '@app-public/images/avatar.jpeg'
 
 const NAV_ITEMS_COLLECTION: Array<{ title: string; link: string }> = [
-  { title: 'Sobre mí', link: 'about' },
-  { title: 'Habilidades', link: 'skills' },
-  { title: 'Publicaciones', link: 'posts' },
-  { title: 'Destacados', link: 'highlights' },
-  { title: 'Contact', link: 'contact' },
+  { title: 'Sobre mí', link: '#about' },
+  { title: 'Habilidades', link: '#skills' },
+  { title: 'Publicaciones', link: '#posts' },
+  { title: 'Destacados', link: '#highlights' },
+  { title: 'Contact', link: '#contact' },
 ]
 
 interface NavItemProps {
