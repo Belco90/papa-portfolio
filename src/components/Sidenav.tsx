@@ -28,6 +28,7 @@ const NavItem = ({ children, href }: NavItemProps) => {
 }
 
 const Sidenav = () => {
+  // TODO: show link to homepage if user not in homepage
   return (
     <>
       {/*<a*/}
