@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import Image from 'next/image'
+import { NextSeo } from 'next-seo'
 
 import Layout from '~/components/Layout'
 import Link from '~/components/Link'
@@ -25,6 +26,14 @@ const Answer = ({ children }: InterviewElementProps) => {
 const EntrevistaDonDeGentesPage = () => {
   return (
     <Layout>
+      <NextSeo
+        title='Entrevista: "Don de Gentes"'
+        description="Cristóbal Beltrán"
+        openGraph={{
+          title: 'Entrevista: "Don de Gentes"',
+          site_name: 'Cristóbal Beltrán',
+        }}
+      />
       <MainHeader subtitle="Entrevista de Paola Pacifici, Periodista y Presidenta de la Asociación Nacional Italiana en España.">
         &quot;Don de Gentes&quot;
       </MainHeader>
