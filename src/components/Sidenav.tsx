@@ -3,6 +3,7 @@ import cx from 'classnames'
 import Image from 'next/image'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 import {
   FaRegEnvelopeOpen,
   FaRegFilePdf,
@@ -12,7 +13,6 @@ import {
 } from 'react-icons/fa'
 
 import avatar from '@app-public/images/avatar.jpeg'
-import { useState } from 'react'
 
 const NAV_ITEMS_COLLECTION: Array<{ title: string; link: string }> = [
   { title: 'Sobre mí', link: '#about' },
@@ -76,6 +76,11 @@ const MobileBar = ({ isOpen, toggleSidenav }: MobileBarProps) => {
 const Sidenav = () => {
   const { pathname } = useRouter()
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    // Block scrolling while sidenav overlay is open
+    document.body.classList.toggle('overflow-y-hidden', isOpen)
+  }, [isOpen])
 
   const isHomePage = pathname === '/'
   const toggleSidenav = () => setIsOpen((prevValue) => !prevValue)
