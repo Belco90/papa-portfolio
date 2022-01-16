@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import Image from 'next/image'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
-import { FaRegEnvelopeOpen, FaRegFilePdf } from 'react-icons/fa'
+import { FaRegEnvelopeOpen, FaRegFilePdf, FaArrowLeft } from 'react-icons/fa'
 
 import avatar from '@app-public/images/avatar.jpeg'
 
@@ -77,7 +77,12 @@ const Sidenav = () => {
                 ))
               ) : (
                 <NextLink href="/">
-                  <a className="block w-full py-3">Volver a inicio</a>
+                  <a className="block w-full py-3">
+                    <span className="flex items-center justify-center gap-2 hover:underline">
+                      <FaArrowLeft />
+                      Volver a inicio
+                    </span>
+                  </a>
                 </NextLink>
               )}
             </ul>
