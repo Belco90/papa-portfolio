@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react'
 import Image from 'next/image'
+import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import { FaRegEnvelopeOpen, FaRegFilePdf } from 'react-icons/fa'
 
 import avatar from '@app-public/images/avatar.jpeg'
@@ -28,7 +30,10 @@ const NavItem = ({ children, href }: NavItemProps) => {
 }
 
 const Sidenav = () => {
-  // TODO: show link to homepage if user not in homepage
+  const { pathname } = useRouter()
+
+  const isHomePage = pathname === '/'
+
   return (
     <>
       {/*<a*/}
@@ -64,11 +69,17 @@ const Sidenav = () => {
           </header>
           <nav className="w-full text-lg">
             <ul>
-              {NAV_ITEMS_COLLECTION.map(({ title, link }) => (
-                <NavItem key={title} href={link}>
-                  {title}
-                </NavItem>
-              ))}
+              {isHomePage ? (
+                NAV_ITEMS_COLLECTION.map(({ title, link }) => (
+                  <NavItem key={title} href={link}>
+                    {title}
+                  </NavItem>
+                ))
+              ) : (
+                <NextLink href="/">
+                  <a className="block w-full py-3">Volver a inicio</a>
+                </NextLink>
+              )}
             </ul>
           </nav>
 
