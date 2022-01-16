@@ -47,11 +47,13 @@ const Sidenav = () => {
       <aside className="w-full lg:w-[30em] lg:shadow transform -translate-x-full lg:translate-x-0 transition-transform duration-150 ease-in bg-brand-400 sticky hidden lg:block top-0 max-h-screen">
         <div className="h-full flex flex-col justify-between items-center text-center text-white py-10">
           <header className="w-full px-4 space-y-4 hidden lg:block">
-            <div className="px-20">
+            <div>
               <Image
                 src={avatar}
                 alt="Foto de Cristóbal"
-                layout="responsive"
+                layout="fixed"
+                width={100}
+                height={100}
                 priority
                 quality={100}
                 className="rounded-full"
