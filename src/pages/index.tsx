@@ -35,7 +35,7 @@ const HomePage = () => {
   return (
     <Layout shouldDisplayBanner>
       <MainHeader subtitle="Animación turística y hostelería">
-        Cristóbal Beltran
+        Cristóbal Beltrán
       </MainHeader>
 
       <section id="about" className="space-y-5 text-justify">
