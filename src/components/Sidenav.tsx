@@ -106,6 +106,7 @@ const Sidenav = () => {
                 width={100}
                 height={100}
                 quality={100}
+                placeholder="blur"
                 className="rounded-full"
               />
             </div>
