@@ -144,7 +144,7 @@ const Sidenav = () => {
               <li>
                 <a
                   href="/documents/curriculo-cristobal-beltran.pdf"
-                  title="Currículo"
+                  title="Currículo (PDF)"
                 >
                   <FaRegFilePdf size="24" title="Currículo" />
                 </a>
