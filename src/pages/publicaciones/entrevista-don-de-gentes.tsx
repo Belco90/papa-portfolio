@@ -20,7 +20,7 @@ const Question = ({ children }: InterviewElementProps) => {
 }
 
 const Answer = ({ children }: InterviewElementProps) => {
-  return <p className="mb-4 text-justify [text-indent:1em]">{children}</p>
+  return <p className="mb-4 text-justify indent-8">{children}</p>
 }
 
 const EntrevistaDonDeGentesPage = () => {
