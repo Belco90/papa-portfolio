@@ -105,7 +105,6 @@ const Sidenav = () => {
                 layout="fixed"
                 width={100}
                 height={100}
-                priority
                 quality={100}
                 className="rounded-full"
               />
