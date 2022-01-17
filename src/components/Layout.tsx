@@ -18,7 +18,6 @@ const Layout = ({ children, shouldDisplayBanner = false }: LayoutProps) => {
             <Image
               src={banner}
               alt="Playa de Fuengirola al amanecer"
-              priority
               layout="responsive"
               placeholder="blur"
               quality={100}
