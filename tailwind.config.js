@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: colors.red,
+        brand: colors.teal,
       },
       fontFamily: {
         sans: '"Lato", sans-serif',

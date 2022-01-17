@@ -8,7 +8,7 @@ interface MainHeaderProps {
 const MainHeader = ({ children, subtitle }: MainHeaderProps) => {
   return (
     <header className="my-10 text-center">
-      <h1 className="text-brand-500 text-3xl md:text-5xl font-bold mb-1">
+      <h1 className="text-brand-600 text-3xl md:text-5xl font-bold mb-1">
         {children}
       </h1>
       {!!subtitle && (

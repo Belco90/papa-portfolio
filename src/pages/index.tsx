@@ -86,7 +86,7 @@ const HomePage = () => {
         <ul className="grid md:grid-cols-2 gap-4">
           {SKILLS_COLLECTION.map(({ title, icon }) => (
             <li key={title} className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-red-500 text-white rounded-full flex justify-center items-center">
+              <div className="w-10 h-10 bg-brand-100 text-brand-800 rounded-full flex justify-center items-center">
                 {icon}
               </div>
               {title}

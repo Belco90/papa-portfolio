@@ -1,12 +1,13 @@
 import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
+import Link from '~/components/Link'
 
 const FORM_ENDPOINT = process.env.NEXT_PUBLIC_GETFORM_ENDPOINT
 
 const COMMON_LABEL_CLASSES = 'font-bold'
 
 const COMMON_INPUT_CLASSES =
-  'block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50'
+  'block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-brand-300 focus:ring focus:ring-brand-200 focus:ring-opacity-50'
 
 interface FormData {
   fullName: string
@@ -17,12 +18,7 @@ interface FormData {
 const ERROR_MESSAGE = (
   <div>
     Algo salió mal, pero recuerda que puedas contactarme en{' '}
-    <a
-      href="mailto:cbs.m61@gmail.com"
-      className="underline underline-offset-1 accent-red-500"
-    >
-      cbs.m61@gmail.com
-    </a>
+    <Link href="mailto:cbs.m61@gmail.com">cbs.m61@gmail.com</Link>
   </div>
 )
 
@@ -92,7 +88,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={formState.isSubmitting}
-          className="w-fit font-bold py-2 px-6 border-2 bg-brand-500 rounded-md text-white hover:bg-brand-700 active:bg-brand-800 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 transition-colors disabled:bg-neutral-500"
+          className="w-fit font-bold py-2 px-6 border-2 transition duration-300 bg-brand-100 rounded-md text-brand-800 hover:bg-brand-200 active:bg-brand-500 focus:ring focus:ring-brand-200 focus:ring-opacity-50 disabled:bg-neutral-500"
         >
           {formState.isSubmitting ? 'Enviando...' : 'Enviar'}
         </button>
