@@ -57,17 +57,17 @@ const MobileBar = ({ isOpen, toggleSidenav }: MobileBarProps) => {
     <div className="fixed top-0 h-10 bg-black text-white w-full flex items-center justify-between lg:hidden">
       <h2 className="pl-4">Cristóbal Beltrán</h2>
       <div className="w-10 h-full bg-brand-300 text-brand-900 flex items-center justify-center">
-        <a
-          title={actionTitle}
+        <button
+          type="button"
           aria-label={actionTitle}
           onClick={handleToggleSidenav}
         >
           {isOpen ? (
-            <FaTimes size="24" role="presentation" />
+            <FaTimes size="24" role="presentation" aria-hidden={true} />
           ) : (
-            <FaBars size="24" role="presentation" />
+            <FaBars size="24" role="presentation" aria-hidden={true} />
           )}
-        </a>
+        </button>
       </div>
     </div>
   )
