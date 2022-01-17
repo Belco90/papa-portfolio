@@ -138,7 +138,7 @@ const Sidenav = () => {
             <ul className="flex gap-4">
               <li>
                 <a href="mailto:cbs.m61@gmail.com" title="Correo electrónico">
-                  <FaRegEnvelopeOpen size="24" title="Correo electrónico" />
+                  <FaRegEnvelopeOpen size="24" aria-hidden={true} />
                 </a>
               </li>
               <li>
@@ -146,7 +146,7 @@ const Sidenav = () => {
                   href="/documents/curriculo-cristobal-beltran.pdf"
                   title="Currículo (PDF)"
                 >
-                  <FaRegFilePdf size="24" title="Currículo" />
+                  <FaRegFilePdf size="24" aria-hidden={true} />
                 </a>
               </li>
             </ul>
