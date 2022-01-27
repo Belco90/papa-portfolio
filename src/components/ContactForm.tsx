@@ -54,7 +54,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleFormSubmit}>
       <div className="grid gap-6">
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid gap-6 md:grid-cols-2">
           <label className="block">
             <span className={COMMON_LABEL_CLASSES}>Nombre</span>{' '}
             <input
@@ -81,14 +81,14 @@ const ContactForm = () => {
             required
             placeholder="¡Déjame aquí tu mensaje!"
             rows={6}
-            className={`${COMMON_INPUT_CLASSES} placeholder:text-slate-400 placeholder:italic`}
+            className={`${COMMON_INPUT_CLASSES} placeholder:italic placeholder:text-slate-400`}
             {...register('message')}
           />
         </label>
         <button
           type="submit"
           disabled={formState.isSubmitting}
-          className="w-fit font-bold py-2 px-6 border-2 transition duration-300 bg-brand-100 rounded-md text-brand-800 hover:bg-brand-200 active:bg-brand-500 focus:ring focus:ring-brand-200 focus:ring-opacity-50 disabled:bg-neutral-500"
+          className="w-fit rounded-md border-2 bg-brand-100 py-2 px-6 font-bold text-brand-800 transition duration-300 hover:bg-brand-200 focus:ring focus:ring-brand-200 focus:ring-opacity-50 active:bg-brand-500 disabled:bg-neutral-500"
         >
           {formState.isSubmitting ? 'Enviando...' : 'Enviar'}
         </button>

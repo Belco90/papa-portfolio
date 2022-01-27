@@ -16,7 +16,7 @@ const Link = forwardRef<HTMLAnchorElement, LinkProps>(
     return (
       <a
         href={href}
-        className="underline underline-offset-1 decoration-brand-600 hover:text-brand-600 transition-colors"
+        className="underline decoration-brand-600 underline-offset-1 transition-colors hover:text-brand-600"
         {...remainingProps}
         ref={ref}
         {...(isExternal && { target: '_blank', rel: 'noopener noreferrer' })}

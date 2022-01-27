@@ -11,8 +11,8 @@ interface LayoutProps {
 
 const Layout = ({ children, shouldDisplayBanner = false }: LayoutProps) => {
   return (
-    <div className="flex flex-col min-h-screen lg:flex-row">
-      <div className="flex flex-col w-screen mt-10 lg:w-fit lg:mt-0">
+    <div className="flex min-h-screen flex-col lg:flex-row">
+      <div className="mt-10 flex w-screen flex-col lg:mt-0 lg:w-fit">
         {shouldDisplayBanner ? (
           <div>
             <Image
@@ -24,9 +24,9 @@ const Layout = ({ children, shouldDisplayBanner = false }: LayoutProps) => {
             />
           </div>
         ) : (
-          <div className="lg:h-4 bg-black" />
+          <div className="bg-black lg:h-4" />
         )}
-        <main className="container mx-auto px-5 lg:px-10 py-10 text-gray-700 text-lg">
+        <main className="container mx-auto px-5 py-10 text-lg text-gray-700 lg:px-10">
           {children}
         </main>
       </div>

@@ -81,12 +81,12 @@ const HomePage = () => {
       </section>
       <hr className="my-8 border-2" />
       <section id="skills">
-        <h2 className="text-3xl font-bold mb-6">Habilidades</h2>
+        <h2 className="mb-6 text-3xl font-bold">Habilidades</h2>
 
-        <ul className="grid md:grid-cols-2 gap-4">
+        <ul className="grid gap-4 md:grid-cols-2">
           {SKILLS_COLLECTION.map(({ title, icon }) => (
             <li key={title} className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-brand-100 text-brand-800 rounded-full flex justify-center items-center">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-100 text-brand-800">
                 {icon}
               </div>
               {title}
@@ -98,8 +98,8 @@ const HomePage = () => {
       <hr className="my-8 border-2" />
 
       <section id="posts">
-        <h2 className="text-3xl font-bold mb-6">Publicaciones</h2>
-        <ul className="list-disc list-inside">
+        <h2 className="mb-6 text-3xl font-bold">Publicaciones</h2>
+        <ul className="list-inside list-disc">
           <li>
             <NextLink href="/publicaciones/entrevista-don-de-gentes" passHref>
               <Link>Entrevista: &quot;Don de Gentes&quot;</Link>
@@ -111,7 +111,7 @@ const HomePage = () => {
       <hr className="my-8 border-2" />
 
       <section id="highlights">
-        <h2 className="text-3xl font-bold mb-6">Destacados</h2>
+        <h2 className="mb-6 text-3xl font-bold">Destacados</h2>
 
         <figure>
           <Image
@@ -125,9 +125,9 @@ const HomePage = () => {
             decoración.
           </figcaption>
         </figure>
-        <hr className="my-4 border-1" />
+        <hr className="border-1 my-4" />
         <figure>
-          <div className="grid md:grid-cols-2 gap-3 items-center mb-1">
+          <div className="mb-1 grid items-center gap-3 md:grid-cols-2">
             <Image
               src={pictureWestSideStory}
               alt="Cristóbal con su compañero en 'West Side Story'"
@@ -146,7 +146,7 @@ const HomePage = () => {
             (Cádiz)
           </figcaption>
         </figure>
-        <hr className="my-4 border-1" />
+        <hr className="border-1 my-4" />
         <figure>
           <Image
             src={pictureCabaretMalaga}
@@ -158,7 +158,7 @@ const HomePage = () => {
             Cabaret 2 Pax. Transhotel Puerto S.A. Fuengirola (Málaga)
           </figcaption>
         </figure>
-        <hr className="my-4 border-1" />
+        <hr className="border-1 my-4" />
         <figure>
           <Image
             src={pictureChef}
@@ -176,7 +176,7 @@ const HomePage = () => {
       <hr className="my-8 border-2" />
 
       <section id="contact">
-        <h2 className="text-3xl font-bold mb-6">Contacto</h2>
+        <h2 className="mb-6 text-3xl font-bold">Contacto</h2>
 
         <p className="mb-4">
           Contactarme solo te llevará un par de minutos rellenando el siguiente

@@ -33,7 +33,7 @@ interface NavItemProps {
 
 const NavItem = ({ children, href, onClick }: NavItemProps) => {
   return (
-    <li className="border-b border-teal-100 last:border-0 hover:bg-gradient-to-tr hover:from-green-300 hover:to-brand-400 transition-colors">
+    <li className="border-b border-teal-100 transition-colors last:border-0 hover:bg-gradient-to-tr hover:from-green-300 hover:to-brand-400">
       <a href={href} className="block w-full py-3" onClick={onClick}>
         {children}
       </a>
@@ -54,9 +54,9 @@ const MobileBar = ({ isOpen, toggleSidenav }: MobileBarProps) => {
   }
 
   return (
-    <div className="fixed top-0 h-10 bg-black text-white w-full flex items-center justify-between lg:hidden">
+    <div className="fixed top-0 flex h-10 w-full items-center justify-between bg-black text-white lg:hidden">
       <h2 className="pl-4">Cristóbal Beltrán</h2>
-      <div className="w-10 h-full bg-brand-300 text-brand-900 flex items-center justify-center">
+      <div className="flex h-full w-10 items-center justify-center bg-brand-300 text-brand-900">
         <button
           type="button"
           aria-label={actionTitle}
@@ -92,12 +92,12 @@ const Sidenav = () => {
       <aside
         id="sidenav"
         className={cx(
-          'bg-blend-multiply w-full transform translate-x-full transition-transform duration-150 ease-in bg-gradient-to-tr from-green-200 to-brand-300 fixed top-10 bottom-0 max-h-screen lg:top-0 lg:w-[30em] lg:sticky lg:shadow lg:translate-x-0',
+          'fixed top-10 bottom-0 max-h-screen w-full translate-x-full transform bg-gradient-to-tr from-green-200 to-brand-300 bg-blend-multiply transition-transform duration-150 ease-in lg:sticky lg:top-0 lg:w-[30em] lg:translate-x-0 lg:shadow',
           { 'translate-x-0': isOpen }
         )}
       >
-        <div className="h-full flex flex-col justify-between items-center text-center text-brand-900 py-10">
-          <header className="w-full px-4 space-y-4">
+        <div className="flex h-full flex-col items-center justify-between py-10 text-center text-brand-900">
+          <header className="w-full space-y-4 px-4">
             <div>
               <Image
                 src={avatar}
@@ -111,7 +111,7 @@ const Sidenav = () => {
               />
             </div>
 
-            <h2 className="font-bold text-2xl">Cristóbal Beltrán</h2>
+            <h2 className="text-2xl font-bold">Cristóbal Beltrán</h2>
           </header>
           <nav className="w-full text-lg">
             <ul>

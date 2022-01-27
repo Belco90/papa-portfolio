@@ -8,13 +8,13 @@ interface MainHeaderProps {
 const MainHeader = ({ children, subtitle }: MainHeaderProps) => {
   return (
     <header className="my-10 text-center">
-      <h1 className="text-brand-600 text-3xl md:text-5xl font-bold mb-1">
+      <h1 className="mb-1 text-3xl font-bold text-brand-600 md:text-5xl">
         {children}
       </h1>
       {!!subtitle && (
         <div
           role="doc-subtitle"
-          className="text-xl md:text-3xl border-neutral-300 border-t-2 mx-4 md:mx-20 pt-1"
+          className="mx-4 border-t-2 border-neutral-300 pt-1 text-xl md:mx-20 md:text-3xl"
         >
           {subtitle}
         </div>

@@ -13,7 +13,7 @@ interface InterviewElementProps {
 
 const Question = ({ children }: InterviewElementProps) => {
   return (
-    <h2 className="font-bold text-2xl pt-6 pb-2 text-neutral-600">
+    <h2 className="pt-6 pb-2 text-2xl font-bold text-neutral-600">
       {children}
     </h2>
   )
@@ -38,7 +38,7 @@ const EntrevistaDonDeGentesPage = () => {
         &quot;Don de Gentes&quot;
       </MainHeader>
 
-      <div className="pt-6 md:w-1/2 md:float-right md:pl-4">
+      <div className="pt-6 md:float-right md:w-1/2 md:pl-4">
         <Image
           src={pictureInterview}
           alt="Cristóbal sentado haciendo la facturación"
