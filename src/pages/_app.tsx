@@ -7,7 +7,7 @@ import { DEFAULT_SEO_CONFIG } from '~/next-seo.config'
 import '~/styles/globals.css'
 
 const DEFAULT_TOASTER_OPTIONS: DefaultToastOptions = {
-  position: 'top-center',
+  position: 'bottom-center',
   success: {
     duration: 3000,
   },
