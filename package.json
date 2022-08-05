@@ -17,12 +17,12 @@
     "pnpm": "^7.5.0"
   },
   "scripts": {
-    "start": "npm run dev",
+    "start": "pnpm dev",
     "dev": "next",
     "build": "next build",
     "serve": "next start",
     "lint": "next lint",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "pnpm lint -- --fix",
     "format": "prettier . --write --ignore-path .gitignore --ignore-unknown",
     "type-check": "tsc",
     "prepare": "is-ci || husky install"
