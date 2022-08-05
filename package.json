@@ -13,6 +13,9 @@
     "url": "https://github.com/Belco90/papa-portfolio/issues"
   },
   "homepage": "https://cristobalbeltran.es/",
+  "engines": {
+    "pnpm": "^7.5.0"
+  },
   "scripts": {
     "start": "npm run dev",
     "dev": "next",
