@@ -7,21 +7,21 @@ import { DEFAULT_SEO_CONFIG } from '~/next-seo.config'
 import '~/styles/globals.css'
 
 const DEFAULT_TOASTER_OPTIONS: DefaultToastOptions = {
-  position: 'bottom-center',
-  success: {
-    duration: 3000,
-  },
-  error: {
-    duration: 5000,
-  },
+	position: 'bottom-center',
+	success: {
+		duration: 3000,
+	},
+	error: {
+		duration: 5000,
+	},
 }
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-  <>
-    <DefaultSeo {...DEFAULT_SEO_CONFIG} />
-    <Toaster toastOptions={DEFAULT_TOASTER_OPTIONS} />
-    <Component {...pageProps} />
-  </>
+	<>
+		<DefaultSeo {...DEFAULT_SEO_CONFIG} />
+		<Toaster toastOptions={DEFAULT_TOASTER_OPTIONS} />
+		<Component {...pageProps} />
+	</>
 )
 
 export default MyApp
