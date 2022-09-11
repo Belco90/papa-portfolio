@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import NextLink from 'next/link'
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 import {
 	FaStar,

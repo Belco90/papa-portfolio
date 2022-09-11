@@ -1,8 +1,9 @@
 import type { ReactNode } from 'react'
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 import Sidenav from '~/components/Sidenav'
 import banner from '@app-public/images/banner.jpeg'
+import { NextImageLayoutResponsiveCss } from '~/common'
 
 interface LayoutProps {
 	children: ReactNode
@@ -18,9 +19,10 @@ const Layout = ({ children, shouldDisplayBanner = false }: LayoutProps) => {
 						<Image
 							src={banner}
 							alt="Playa de Fuengirola al amanecer"
-							layout="responsive"
 							placeholder="blur"
 							quality={100}
+							sizes="100vw"
+							style={NextImageLayoutResponsiveCss}
 						/>
 					</div>
 				) : (

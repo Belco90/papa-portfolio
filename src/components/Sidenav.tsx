@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import cx from 'classnames'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
@@ -98,18 +98,15 @@ const Sidenav = () => {
 			>
 				<div className="flex h-full flex-col items-center justify-between py-10 text-center text-brand-900">
 					<header className="w-full space-y-4 px-4">
-						<div>
-							<Image
-								src={avatar}
-								alt="Foto de Cristóbal"
-								layout="fixed"
-								width={100}
-								height={100}
-								quality={100}
-								placeholder="blur"
-								className="rounded-full"
-							/>
-						</div>
+						<Image
+							src={avatar}
+							alt="Foto de Cristóbal"
+							width={100}
+							height={100}
+							quality={100}
+							placeholder="blur"
+							className="rounded-full mx-auto"
+						/>
 
 						<h2 className="text-2xl font-bold">Cristóbal Beltrán</h2>
 					</header>

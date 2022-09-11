@@ -1,11 +1,12 @@
 import type { ReactNode } from 'react'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import { NextSeo } from 'next-seo'
 
 import Layout from '~/components/Layout'
 import Link from '~/components/Link'
 import MainHeader from '~/components/MainHeader'
 import pictureInterview from '@app-public/images/entrevista-don-de-gentes.png'
+import { NextImageLayoutResponsiveCss } from '~/common'
 
 interface InterviewElementProps {
 	children: ReactNode
@@ -42,9 +43,10 @@ const EntrevistaDonDeGentesPage = () => {
 				<Image
 					src={pictureInterview}
 					alt="Cristóbal sentado haciendo la facturación"
-					layout="responsive"
 					placeholder="blur"
 					className="rounded-md"
+					sizes="100vw"
+					style={NextImageLayoutResponsiveCss}
 				/>
 			</div>
 
