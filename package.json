@@ -14,8 +14,9 @@
 	},
 	"homepage": "https://cristobalbeltran.es/",
 	"engines": {
-		"pnpm": "^7.5.0"
+		"pnpm": "^7.13.0"
 	},
+	"packageManager": "pnpm@7.14.0",
 	"scripts": {
 		"start": "pnpm dev",
 		"dev": "next",
