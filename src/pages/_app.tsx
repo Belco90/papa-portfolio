@@ -5,6 +5,7 @@ import { Toaster } from 'react-hot-toast'
 
 import { DEFAULT_SEO_CONFIG } from '~/next-seo.config'
 import '~/styles/globals.css'
+import VercelAnalytics from '~/components/VercelAnalytics'
 
 const DEFAULT_TOASTER_OPTIONS: DefaultToastOptions = {
 	position: 'bottom-center',
@@ -18,6 +19,7 @@ const DEFAULT_TOASTER_OPTIONS: DefaultToastOptions = {
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
 	<>
+		<VercelAnalytics />
 		<DefaultSeo {...DEFAULT_SEO_CONFIG} />
 		<Toaster toastOptions={DEFAULT_TOASTER_OPTIONS} />
 		<Component {...pageProps} />
