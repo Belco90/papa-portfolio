@@ -12,7 +12,6 @@ import {
 } from 'react-icons/fa'
 
 import ContactForm from '~/components/ContactForm'
-import UILayout from '~/components/UILayout'
 
 import pictureWorkshop from '@app-public/images/picture-workshop.jpeg'
 import pictureWestSideStory from '@app-public/images/picture-west-side-story.jpeg'
@@ -36,7 +35,7 @@ const SKILLS_COLLECTION: Array<{ icon: ReactNode; title: string }> = [
 
 const HomePage = () => {
 	return (
-		<UILayout shouldDisplayBanner>
+		<>
 			<MainHeader subtitle="Animación turística y hostelería">
 				Cristóbal Beltrán
 			</MainHeader>
@@ -189,7 +188,7 @@ const HomePage = () => {
 
 				<ContactForm />
 			</section>
-		</UILayout>
+		</>
 	)
 }
 
