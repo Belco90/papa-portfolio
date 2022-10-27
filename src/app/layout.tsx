@@ -1,4 +1,8 @@
 import { FC, ReactNode } from 'react'
+import { Lato } from '@next/font/google'
+
+const lato400 = Lato({ weight: '400', variable: '--lato400-font' })
+const lato700 = Lato({ weight: '700', variable: '--lato700-font' })
 
 interface IRootLayoutProps {
 	children: ReactNode
@@ -6,8 +10,10 @@ interface IRootLayoutProps {
 
 const RootLayout: FC<IRootLayoutProps> = ({ children }) => {
 	return (
-		// TODO load font through next/font
-		<html lang="es" className="scroll-pt-12 lg:scroll-pt-6">
+		<html
+			lang="es"
+			className={`scroll-pt-12 lg:scroll-pt-6 ${lato400.className} ${lato700.className}`}
+		>
 			<body>{children}</body>
 		</html>
 	)
