@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 
 import Sidenav from '~/components/Sidenav'
 import banner from '@app-public/images/banner.jpeg'

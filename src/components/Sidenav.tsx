@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import cx from 'classnames'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
