@@ -101,7 +101,11 @@ const HomePage = () => {
 				<h2 className="mb-6 text-3xl font-bold">Publicaciones</h2>
 				<ul className="list-inside list-disc">
 					<li>
-						<NextLink href="/publicaciones/entrevista-don-de-gentes" passHref>
+						<NextLink
+							href="/publicaciones/entrevista-don-de-gentes"
+							passHref
+							legacyBehavior
+						>
 							<Link>Entrevista: &quot;Don de Gentes&quot;</Link>
 						</NextLink>
 					</li>
