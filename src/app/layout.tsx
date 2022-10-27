@@ -1,6 +1,7 @@
 import { FC, ReactNode } from 'react'
 import { Lato } from '@next/font/google'
 import Providers from '~/app/Providers'
+import UILayout from '~/components/UILayout'
 
 const lato400 = Lato({ weight: '400', variable: '--lato400-font' })
 const lato700 = Lato({ weight: '700', variable: '--lato700-font' })
@@ -16,7 +17,9 @@ const RootLayout: FC<IRootLayoutProps> = ({ children }) => {
 				<link rel="icon" href="/favicon.ico" />
 			</head>
 			<body>
-				<Providers>{children}</Providers>
+				<Providers>
+					<UILayout>{children}</UILayout>
+				</Providers>
 			</body>
 		</html>
 	)
