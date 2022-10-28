@@ -4,7 +4,7 @@ import type { ReactNode } from 'react'
 import cx from 'classnames'
 import Image from 'next/image'
 import NextLink from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import {
 	FaRegEnvelopeOpen,
@@ -76,8 +76,7 @@ const MobileBar = ({ isOpen, toggleSidenav }: MobileBarProps) => {
 }
 
 const Sidenav = () => {
-	// TODO: const { pathname } = useRouter()
-	const pathname = '/'
+	const pathname = usePathname()
 	const [isOpen, setIsOpen] = useState(false)
 
 	useEffect(() => {

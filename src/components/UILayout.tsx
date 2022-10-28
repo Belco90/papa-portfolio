@@ -1,33 +1,17 @@
-import type { ReactNode } from 'react'
-import Image from 'next/image'
+import type { FC, ReactNode } from 'react'
 
 import Sidenav from '~/components/Sidenav'
-import banner from '@app-public/images/banner.jpeg'
-import { NextImageLayoutResponsiveCss } from '~/common'
+import LayoutTopBanner from './LayoutTopBanner'
 
 interface UILayoutProps {
 	children: ReactNode
-	shouldDisplayBanner?: boolean
 }
 
-const UILayout = ({ children, shouldDisplayBanner = false }: UILayoutProps) => {
+const UILayout: FC<UILayoutProps> = ({ children }) => {
 	return (
 		<div className="flex min-h-screen flex-col lg:flex-row">
 			<div className="mt-10 flex w-screen flex-col lg:mt-0 lg:w-fit">
-				{shouldDisplayBanner ? (
-					<div>
-						<Image
-							src={banner}
-							alt="Playa de Fuengirola al amanecer"
-							placeholder="blur"
-							quality={100}
-							sizes="100vw"
-							style={NextImageLayoutResponsiveCss}
-						/>
-					</div>
-				) : (
-					<div className="bg-black lg:h-4" />
-				)}
+				<LayoutTopBanner />
 				<main className="container mx-auto px-5 py-10 text-lg text-gray-700 lg:px-10">
 					{children}
 				</main>
