@@ -12,7 +12,7 @@ module.exports = {
 				brand: colors.teal,
 			},
 			fontFamily: {
-				sans: '"Lato", sans-serif',
+				sans: 'var(--lato-font)',
 			},
 		},
 	},
