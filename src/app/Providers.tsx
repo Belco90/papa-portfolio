@@ -2,9 +2,7 @@
 
 import { FC, ReactNode } from 'react'
 import { DefaultToastOptions, Toaster } from 'react-hot-toast'
-import { DefaultSeo } from 'next-seo'
-import VercelAnalytics from '~/components/VercelAnalytics'
-import { DEFAULT_SEO_CONFIG } from '~/next-seo.config'
+// import VercelAnalytics from '~/components/VercelAnalytics'
 
 const DEFAULT_TOASTER_OPTIONS: DefaultToastOptions = {
 	position: 'bottom-center',
@@ -23,8 +21,7 @@ interface IProvidersProps {
 const Providers: FC<IProvidersProps> = ({ children }) => {
 	return (
 		<>
-			{/*TODO:<VercelAnalytics />*/}
-			<DefaultSeo {...DEFAULT_SEO_CONFIG} />
+			{/* TODO: <VercelAnalytics /> */}
 			<Toaster toastOptions={DEFAULT_TOASTER_OPTIONS} />
 			{children}
 		</>
