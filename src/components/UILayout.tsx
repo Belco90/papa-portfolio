@@ -5,12 +5,12 @@ import Sidenav from '~/components/Sidenav'
 import banner from '@app-public/images/banner.jpeg'
 import { NextImageLayoutResponsiveCss } from '~/common'
 
-interface LayoutProps {
+interface UILayoutProps {
 	children: ReactNode
 	shouldDisplayBanner?: boolean
 }
 
-const Layout = ({ children, shouldDisplayBanner = false }: LayoutProps) => {
+const UILayout = ({ children, shouldDisplayBanner = false }: UILayoutProps) => {
 	return (
 		<div className="flex min-h-screen flex-col lg:flex-row">
 			<div className="mt-10 flex w-screen flex-col lg:mt-0 lg:w-fit">
@@ -37,4 +37,4 @@ const Layout = ({ children, shouldDisplayBanner = false }: LayoutProps) => {
 	)
 }
 
-export default Layout
+export default UILayout

@@ -1,3 +1,4 @@
+'use client'
 import { Analytics } from '@vercel/analytics/react'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'

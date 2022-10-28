@@ -1,3 +1,5 @@
+'use client'
+
 import type { ReactNode } from 'react'
 import cx from 'classnames'
 import Image from 'next/image'
@@ -74,7 +76,8 @@ const MobileBar = ({ isOpen, toggleSidenav }: MobileBarProps) => {
 }
 
 const Sidenav = () => {
-	const { pathname } = useRouter()
+	// TODO: const { pathname } = useRouter()
+	const pathname = '/'
 	const [isOpen, setIsOpen] = useState(false)
 
 	useEffect(() => {
