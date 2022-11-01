@@ -6,7 +6,7 @@ import '~/styles/globals.css'
 
 const lato = Lato({
 	variable: '--lato-font',
-	weight: '400', // FIXME: set multiple weights when this PR gets released https://github.com/vercel/next.js/pull/42008
+	weight: ['400', '700'],
 	subsets: ['latin'],
 })
 
