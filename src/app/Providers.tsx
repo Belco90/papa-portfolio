@@ -2,7 +2,7 @@
 
 import { FC, ReactNode } from 'react'
 import { DefaultToastOptions, Toaster } from 'react-hot-toast'
-// import VercelAnalytics from '~/components/VercelAnalytics'
+import VercelAnalytics from '~/components/VercelAnalytics'
 
 const DEFAULT_TOASTER_OPTIONS: DefaultToastOptions = {
 	position: 'bottom-center',
@@ -21,7 +21,7 @@ interface IProvidersProps {
 const Providers: FC<IProvidersProps> = ({ children }) => {
 	return (
 		<>
-			{/* TODO: <VercelAnalytics /> */}
+			<VercelAnalytics />
 			<Toaster toastOptions={DEFAULT_TOASTER_OPTIONS} />
 			{children}
 		</>
