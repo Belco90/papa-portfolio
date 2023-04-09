@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react'
-import { Lato } from '@next/font/google'
+import { Lato } from 'next/font/google'
 import Providers from '~/app/Providers'
 import UILayout from '~/components/UILayout'
 import '~/styles/globals.css'
