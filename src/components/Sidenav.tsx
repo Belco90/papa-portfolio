@@ -119,13 +119,15 @@ const Sidenav = () => {
 									</NavItem>
 								))
 							) : (
-								<NextLink href="/">
-									<a className="block w-full py-3" onClick={handleClose}>
-										<span className="flex items-center justify-center gap-2 hover:underline">
-											<FaArrowLeft focusable={false} />
-											Volver a inicio
-										</span>
-									</a>
+								<NextLink
+									href="/"
+									className="block w-full py-3"
+									onClick={handleClose}
+								>
+									<span className="flex items-center justify-center gap-2 hover:underline">
+										<FaArrowLeft focusable={false} />
+										Volver a inicio
+									</span>
 								</NextLink>
 							)}
 						</ul>
