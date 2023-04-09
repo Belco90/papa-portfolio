@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import { NextSeo } from 'next-seo'
 
 import Layout from '~/components/Layout'
