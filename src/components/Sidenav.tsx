@@ -52,6 +52,7 @@ const MobileBar = ({ isOpen, toggleSidenav }: MobileBarProps) => {
 	const actionTitle = isOpen ? CLOSE_ACTION_TITLE : OPEN_ACTION_TITLE
 
 	const handleToggleSidenav = () => {
+		console.log(`handleToggleSidenav: ${isOpen}`)
 		toggleSidenav()
 	}
 
@@ -94,8 +95,8 @@ const Sidenav = () => {
 			<aside
 				id="sidenav"
 				className={cx(
-					'fixed top-10 bottom-0 max-h-screen w-full translate-x-full transform bg-gradient-to-tr from-green-200 to-brand-300 bg-blend-multiply transition-transform duration-150 ease-in lg:sticky lg:top-0 lg:w-[30em] lg:translate-x-0 lg:shadow',
-					{ 'translate-x-0': isOpen }
+					'fixed top-10 bottom-0 max-h-screen w-full transform bg-gradient-to-tr from-green-200 to-brand-300 bg-blend-multiply transition-transform duration-150 ease-in lg:sticky lg:top-0 lg:w-[30em] lg:translate-x-0 lg:shadow',
+					{ 'translate-x-0': isOpen, 'translate-x-full': !isOpen }
 				)}
 			>
 				<div className="flex h-full flex-col items-center justify-between py-10 text-center text-brand-900">
