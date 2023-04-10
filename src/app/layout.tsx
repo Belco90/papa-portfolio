@@ -3,6 +3,7 @@ import { Lato } from 'next/font/google'
 import Providers from '~/app/Providers'
 import UILayout from '~/components/UILayout'
 import '~/styles/globals.css'
+import { openGraphCommon } from '~/app/shared-metadata'
 
 const lato = Lato({
 	variable: '--lato-font',
@@ -12,6 +13,16 @@ const lato = Lato({
 
 interface IRootLayoutProps {
 	children: ReactNode
+}
+
+export const metadata = {
+	title: {
+		template: '%s | Cristóbal Beltrán',
+		default: 'Cristóbal Beltrán',
+		absolute: 'Cristóbal Beltrán',
+	},
+	description: 'Animación turística y hostelería',
+	openGraph: openGraphCommon,
 }
 
 const RootLayout: FC<IRootLayoutProps> = ({ children }) => {

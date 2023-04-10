@@ -5,9 +5,20 @@ import Link from '~/components/Link'
 import MainHeader from '~/components/MainHeader'
 import pictureInterview from '@app-public/images/entrevista-don-de-gentes.png'
 import { NextImageLayoutResponsiveCss } from '~/common'
+import { openGraphCommon } from '~/app/shared-metadata'
 
 interface InterviewElementProps {
 	children: ReactNode
+}
+
+export const metadata = {
+	title: 'Entrevista: "Don de Gentes"',
+	description: 'Cristóbal Beltrán',
+	openGraph: {
+		...openGraphCommon,
+		title: 'Entrevista: "Don de Gentes"',
+		description: 'Cristóbal Beltrán',
+	},
 }
 
 const Question = ({ children }: InterviewElementProps) => {
