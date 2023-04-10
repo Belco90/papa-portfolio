@@ -4,5 +4,5 @@ module.exports = {
 	eslint: {
 		dirs: ['src'],
 	},
-	experimental: { appDir: true },
+	experimental: { appDir: true, typedRoutes: true },
 }
