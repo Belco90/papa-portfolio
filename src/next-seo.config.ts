@@ -8,6 +8,6 @@ export const DEFAULT_SEO_CONFIG: DefaultSeoProps = {
 		type: 'website',
 		url: 'https://cristobalbeltran.es/',
 		title: 'Cristóbal Beltrán',
-		site_name: 'Animación turística y hostelería',
+		siteName: 'Animación turística y hostelería',
 	},
 }

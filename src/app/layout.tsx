@@ -17,9 +17,6 @@ interface IRootLayoutProps {
 const RootLayout: FC<IRootLayoutProps> = ({ children }) => {
 	return (
 		<html lang="es" className={`scroll-pt-12 lg:scroll-pt-6 ${lato.variable}`}>
-			<head>
-				<link rel="icon" href="/favicon.ico" />
-			</head>
 			<body>
 				<Providers>
 					<UILayout>{children}</UILayout>
