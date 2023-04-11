@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
 	content: [
+		'./src/app/**/*.{js,ts,jsx,tsx}',
 		'./src/pages/**/*.{js,ts,jsx,tsx}',
 		'./src/components/**/*.{js,ts,jsx,tsx}',
 	],
@@ -11,7 +12,7 @@ module.exports = {
 				brand: colors.teal,
 			},
 			fontFamily: {
-				sans: '"Lato", sans-serif',
+				sans: 'var(--lato-font)',
 			},
 		},
 	},

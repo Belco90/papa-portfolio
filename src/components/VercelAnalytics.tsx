@@ -1,6 +1,7 @@
+'use client'
 import { Analytics } from '@vercel/analytics/react'
-import { useRouter } from 'next/router'
-import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import { useEffect, useRef } from 'react'
 
 const VA_DISABLE_KEY = 'va-disable'
 const VA_TOGGLE_HASH = '#va-toggle'
@@ -20,14 +21,14 @@ const NoopAnalytics = (): null => {
 }
 
 const VercelAnalytics = () => {
-	const { isReady, replace, asPath } = useRouter()
+	const { replace } = useRouter()
+	const isHashToggled = useRef<boolean>(false)
 
 	useEffect(() => {
 		const url = new URL(document.URL)
 		const shouldToggleVercelAnalytics = url.hash === VA_TOGGLE_HASH
 
-		if (isReady && shouldToggleVercelAnalytics) {
-			const newUrl = asPath.replace(VA_TOGGLE_HASH, '')
+		if (shouldToggleVercelAnalytics && !isHashToggled.current) {
 			const isVercelAnalyticsDisabled = !!localStorage.getItem(VA_DISABLE_KEY)
 
 			if (isVercelAnalyticsDisabled) {
@@ -37,9 +38,13 @@ const VercelAnalytics = () => {
 				localStorage.setItem(VA_DISABLE_KEY, '1')
 				logToggleVercelAnalyticsAction('disabled')
 			}
-			void replace(newUrl, undefined, { shallow: true })
+
+			// Remove the hash from the URL
+			isHashToggled.current = true
+			const newPathname = url.pathname
+			void replace(newPathname)
 		}
-	}, [replace, isReady, asPath])
+	}, [replace])
 
 	if (process.env.NEXT_PUBLIC_VERCEL_ENV !== 'production') {
 		return <NoopAnalytics />
