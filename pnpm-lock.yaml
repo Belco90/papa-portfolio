@@ -4,9 +4,6 @@ dependencies:
   '@tailwindcss/forms':
     specifier: ^0.5.3
     version: 0.5.3(tailwindcss@3.3.1)
-  '@vercel/analytics':
-    specifier: ^0.1.11
-    version: 0.1.11(react@18.2.0)
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
@@ -514,17 +511,6 @@ packages:
       '@typescript-eslint/types': 5.57.1
       eslint-visitor-keys: 3.4.0
     dev: true
-
-  /@vercel/analytics@0.1.11(react@18.2.0):
-    resolution:
-      {
-        integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==,
-      }
-    peerDependencies:
-      react: ^16.8||^17||^18
-    dependencies:
-      react: 18.2.0
-    dev: false
 
   /acorn-jsx@5.3.2(acorn@8.8.2):
     resolution:
