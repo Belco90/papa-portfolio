@@ -11,8 +11,6 @@ import {
 	FaComment,
 } from 'react-icons/fa'
 
-import ContactForm from '~/components/ContactForm'
-
 import pictureWorkshop from '@app-public/images/picture-workshop.jpeg'
 import pictureWestSideStory from '@app-public/images/picture-west-side-story.jpeg'
 import pictureCabaretCadiz from '@app-public/images/picture-cabaret-cadiz.jpeg'
@@ -174,19 +172,6 @@ const HomePage = () => {
 						Fuengirola (Málaga)
 					</figcaption>
 				</figure>
-			</section>
-
-			<hr className="my-8 border-2" />
-
-			<section id="contact">
-				<h2 className="mb-6 text-3xl font-bold">Contacto</h2>
-
-				<p className="mb-4">
-					Contactarme solo te llevará un par de minutos rellenando el siguiente
-					formulario:
-				</p>
-
-				<ContactForm />
 			</section>
 		</>
 	)
